@@ -227,6 +227,8 @@
     transition: all .2s ease; }
     .sns-icon i:hover {
       transform: scale(1.2) translateY(-3px); }
+      .sns-icon i:hover:active {
+        transform: translate(0px); }
 
 .header {
   position: relative;
@@ -334,9 +336,9 @@
   z-index: 1000; }
   .hamburger__line {
     background-color: #9028da;
-    margin: 8px;
+    margin: 6px;
     height: 3px;
-    width: 40px;
+    width: 30px;
     backface-visibility: hidden;
     transition: all .5s ease; }
   .hamburger.tgl-burger {
@@ -355,7 +357,7 @@
 
 .tgl-line3 {
   background-color: #fff;
-  transform: translateY(-10px) rotate(-45deg); }
+  transform: translateY(-8px) rotate(-45deg); }
 
 .row {
   display: flex;
