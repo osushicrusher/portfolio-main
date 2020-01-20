@@ -15,10 +15,6 @@
     min-width: 200px;
     max-width: 300px;
 
-    &:hover {
-        
-    }
-
     @media screen and (max-width: 480px) {
         position: fixed;
         top: 90%;
@@ -34,6 +30,10 @@
 
         &:hover {
             transform: scale(1.2) translateY(-3px);
+
+            &:active {
+                transform: translate(0px);
+            }
         }
     }
 }
