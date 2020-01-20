@@ -1,0 +1,10 @@
+
+//row
+.row {
+    display: flex;
+    padding: 60px 40px;
+
+    @media screen and (max-width: 768px){
+        padding: 10px 10px;
+    }
+}

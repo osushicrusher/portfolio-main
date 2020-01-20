@@ -1,0 +1,23 @@
+.heading-primary {
+  backface-visibility: hidden;
+}
+
+.heading-primary--main {
+  animation: .6s slideInLeft ease-in;
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.heading-primary--sub {
+  animation: .6s slideInRight ease-in;
+  display: block;
+  text-align: center;
+}
+
+.heading-secondary {
+  display: block;
+  font-size: 4rem;
+  text-align: center;
+}

@@ -1,0 +1,72 @@
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  75% {
+    opacity: .75;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  75% {
+    opacity: .75;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes ufoAnimation {
+  from {
+  }
+  25% {
+    transform: translateX(-300px) rotateY(200deg);
+  }
+  50% {
+    transform: translateX(300px) rotateY(400deg);
+  }
+  75% {
+    transform: translateX(-300px) rotateY(200deg);
+  }
+  to {
+  }
+}
+
+@keyframes lightAnimation {
+  0% {
+  }
+  25% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  75% {
+    transform: translateX(-300px);
+  }
+  100% {
+  }
+}
+
+@keyframes navListFade {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

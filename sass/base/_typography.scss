@@ -1,0 +1,57 @@
+
+.heading-primary {
+    backface-visibility: hidden;
+
+    &--main {
+        color: $color-primary;
+        font-size: 6rem;
+        font-weight: 400;
+        display: block;
+        text-align: center;
+        animation: .8s slideInLeft ease-in;
+
+        @media screen and (max-width: 375px) {
+            font-size: 4rem;
+        }
+    }
+
+    &--sub {
+        color: $color-primary;
+        display: block;
+        text-align: center;
+        animation: .8s slideInRight ease-in;
+    }
+}.secondary-text-box {
+
+}
+
+.warning-message {
+    color: red;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.heading-secondary {
+    border-bottom: 3px $color-secondary solid;
+    display: inline-block;
+    font-size: 4rem;
+    margin: 0 auto;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.text-primary {
+    font-size: 2rem;;
+}
+
+.text-secondary {
+    font-size: 1.4rem;
+    min-width: 50px;
+    width: 40%;
+}
+
+.copyright {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}

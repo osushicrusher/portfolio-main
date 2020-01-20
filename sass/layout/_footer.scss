@@ -1,0 +1,39 @@
+.footer {
+    padding: 20px;
+}
+
+.sns-icon {
+    background-color: $color-secondary;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .4);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 40%;
+    min-width: 200px;
+    max-width: 300px;
+
+    &:hover {
+        
+    }
+
+    @media screen and (max-width: 480px) {
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -90%);
+        width: 60%;
+    }
+
+    & i {
+        font-size: 2.2rem;
+        color: $color-primary;
+        transition: all .2s ease;
+
+        &:hover {
+            transform: scale(1.2) translateY(-3px);
+        }
+    }
+}
