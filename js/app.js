@@ -1,9 +1,8 @@
 
-
-// 読み込んだらfadeout
-/*$(window).load(function() {
+//読み込んだらfadeout
+$(window).load(function() {
   $('.loading').delay(3000).fadeOut(600);
-}); */
+});
 
 window.onload = function() {
   scroll_effect();
@@ -38,7 +37,8 @@ const navLists = document.querySelectorAll('.header__list');
 
 hamburger.addEventListener('click', navToggle); //ハンバーガーメニューを押すとnavが開閉する。
 
-nav.addEventListener('click', navToggle); //navが展開されているときには、リンク以外の箇所をクリックしてもnavが閉じるようにする。
+nav.addEventListener('click', navToggle)//navが展開されているときには、リンク以外の箇所をクリックしてもnavが閉じるようにする。
+
 
 
 
@@ -49,10 +49,11 @@ function navToggle() {  //navの開閉の関数を定義
     line2.classList.toggle('tgl-line2');
     line3.classList.toggle('tgl-line3');
     hamburger.classList.toggle('tgl-burger');
-    navLists.forEach(function(list, index) {
-      list.style.animation = `navListFade .8s ease forwards ${index / 6}s`;
-    })
-
+    if (matchMedia('(max-width: 768px)').matches) {
+      navLists.forEach(function(list, index) {
+        list.style.animation = `navListFade .8s ease forwards ${index / 6}s`;
+      })
+    }
     navToggleFlag = 1;
   } else {
     nav.classList.toggle('open');
@@ -60,13 +61,14 @@ function navToggle() {  //navの開閉の関数を定義
     line2.classList.toggle('tgl-line2');
     line3.classList.toggle('tgl-line3');
     hamburger.classList.toggle('tgl-burger');
-    navLists.forEach(function(list) {
-      list.style.animation = '';
-    })
-
+    if (matchMedia('(max-width: 768px)').matches) {
+      navLists.forEach(function(list) {
+        list.style.animation = '';
+      })
+    }
     navToggleFlag = 0;
+    }
   }
-}
 
 
 /*------流体アニメーション-----*/
