@@ -220,15 +220,17 @@
       top: 90%;
       left: 50%;
       transform: translate(-50%, -90%);
-      width: 60%; } }
+      width: 60%;
+      z-index: 10; } }
+  .sns-icon__link {
+    color: #9028da; }
+    .sns-icon__link:hover {
+      transform: scale(1.2) translateY(-3px); }
+    .sns-icon__link:active {
+      transform: scale(1.2) translateY(-1px); }
   .sns-icon i {
     font-size: 2.2rem;
-    color: #9028da;
     transition: all .2s ease; }
-    .sns-icon i:hover {
-      transform: scale(1.2) translateY(-3px); }
-      .sns-icon i:hover:active {
-        transform: translate(0px); }
 
 .header {
   position: relative;
@@ -254,7 +256,7 @@
   .header__nav {
     display: flex;
     justify-content: space-around;
-    width: 30%; }
+    width: 40%; }
     @media screen and (max-width: 768px) {
       .header__nav {
         background-color: #9028da;
@@ -269,10 +271,12 @@
         clip-path: circle(100px at 90% -20%);
         -webkit-clip-path: circle(100px at 90% -20%);
         transition: all .5s ease-out;
-        z-index: 100; }
+        opacity: 0; }
         .header__nav.open {
           clip-path: circle(700px at 90% -20%);
-          -webkit-clip-path: circle(700px at 90% -20%); } }
+          -webkit-clip-path: circle(700px at 90% -20%);
+          opacity: 1;
+          z-index: 100; } }
     @media screen and (max-width: 768px) and (max-width: 480px) {
       .header__nav.open {
         clip-path: circle(600px at 90% -20%);
@@ -280,49 +284,57 @@
   .header__list {
     font-size: 2rem;
     list-style: none;
-    margin-right: 20px; }
+    margin-right: 20px;
+    padding: 10px; }
     @media screen and (max-width: 768px) {
       .header__list {
-        margin-top: 100px; } }
+        margin-top: 80px; } }
+    .header__list.list-effect {
+      position: relative; }
+      .header__list.list-effect::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        border-top: 5px solid #000;
+        border-left: 5px solid #000;
+        z-index: -1;
+        transition: all .5s;
+        box-sizing: border-box;
+        opacity: 0; }
+        @media screen and (max-width: 768px) {
+          .header__list.list-effect::before {
+            border-top: 5px solid #FFF;
+            border-left: 5px solid #FFF; } }
+      .header__list.list-effect::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 15px;
+        width: 15px;
+        border-bottom: 5px solid #000;
+        border-right: 5px solid #000;
+        z-index: -1;
+        transition: all .5s;
+        box-sizing: border-box;
+        opacity: 0; }
+        @media screen and (max-width: 768px) {
+          .header__list.list-effect::after {
+            border-bottom: 5px solid #FFF;
+            border-right: 5px solid #FFF; } }
+      .header__list.list-effect:hover::before, .header__list.list-effect:hover::after {
+        width: 100%;
+        height: 100%;
+        opacity: 1; }
   .header__link {
     color: #000;
-    padding: 10px 25px;
     text-decoration: none; }
     @media screen and (max-width: 768px) {
       .header__link {
-        color: #FFF; }
-        .header__link.link-effect {
-          position: relative; }
-          .header__link.link-effect::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 15px;
-            width: 15px;
-            border-top: 5px solid #fff;
-            border-left: 5px solid #fff;
-            z-index: -1;
-            transition: all .5s;
-            box-sizing: border-box;
-            opacity: 0; }
-          .header__link.link-effect::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            height: 15px;
-            width: 15px;
-            border-bottom: 5px solid #fff;
-            border-right: 5px solid #fff;
-            z-index: -1;
-            transition: all .5s;
-            box-sizing: border-box;
-            opacity: 0; }
-          .header__link.link-effect:hover::before, .header__link.link-effect:hover::after {
-            width: 100%;
-            height: 100%;
-            opacity: 1; } }
+        color: #FFF; } }
   .header__main {
     margin-top: 30px; }
 
