@@ -1,8 +1,8 @@
 
 //読み込んだらfadeout
-$(window).load(function() {
+/*$(window).load(function() {
   $('.loading').delay(3000).fadeOut(600);
-});
+});*/
 
 window.onload = function() {
   scroll_effect();
