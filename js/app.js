@@ -130,7 +130,7 @@ fluidSmall();
 //メールアドレス
 const mailAddressText = document.getElementById('js-mail');
 
-mailAddressText.addEventListener('keyup', function() { //文字が入力される度にチェックする
+mailAddressText.addEventListener('blur', function() { //focusが外れると判定する
   const warningMailMessage = document.getElementById('js-warningMail');
   const mailAddress = this.value; //入力されたメールアドレス
   const mailAddressRegexp = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/;
@@ -146,7 +146,7 @@ mailAddressText.addEventListener('keyup', function() { //文字が入力され�
 // 電話番号
 const phoneNumberText = document.getElementById('js-phone');
 
-phoneNumberText.addEventListener('keyup', function() { //文字が入力される度に内容のチェックをする
+phoneNumberText.addEventListener('blur', function() { //focusが外れるたびに内容のチェックをする
   const warningPhoneMessage = document.getElementById('js-warningPhone');
   const phoneNumber = this.value; // 入力された電話番号
   const trimmedPhoneNumber = phoneNumber.replace(/-/g, ''); //電話番号に「-」が含まれていたら「''」(空文字)に置き換える

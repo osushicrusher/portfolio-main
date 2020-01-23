@@ -64,12 +64,17 @@
 
     &__list {
         font-size: 2rem;
+        letter-spacing: 1px;
         list-style: none;
-        margin-right: 20px;
-        padding: 10px;
+        text-transform: uppercase;
+        padding: 10px 20px;
 
         @media screen and (max-width: 768px) {
             margin-top: 80px;
+        }
+
+        @media screen and (min-width: 769px) {
+            margin-right: 20px;
         }
 
         &.list-effect {
@@ -82,16 +87,16 @@
                 left: 0;
                 height: 15px;
                 width: 15px;
-                border-top: 5px solid $color-secondary;
-                border-left: 5px solid $color-secondary;
+                border-top: 3px solid $color-secondary;
+                border-left: 3px solid $color-secondary;
                 z-index: -1;
                 transition: all .5s;
                 box-sizing: border-box;
                 opacity: 0;
 
                 @media screen and (max-width: 768px) {
-                    border-top: 5px solid $color-primary;
-                    border-left: 5px solid $color-primary;
+                    border-top: 3px solid $color-primary;
+                    border-left: 3px solid $color-primary;
                 }
             }
 
@@ -102,16 +107,16 @@
                 right: 0;
                 height: 15px;
                 width: 15px;
-                border-bottom: 5px solid $color-secondary;
-                border-right: 5px solid $color-secondary;
+                border-bottom: 3px solid $color-secondary;
+                border-right: 3px solid $color-secondary;
                 z-index: -1;
                 transition: all .5s;
                 box-sizing: border-box;
                 opacity: 0;
 
                 @media screen and (max-width: 768px) {
-                    border-bottom: 5px solid $color-primary;
-                    border-right: 5px solid $color-primary;
+                    border-bottom: 3px solid $color-primary;
+                    border-right: 3px solid $color-primary;
                 }
             }
 
@@ -154,6 +159,10 @@
         width: 30px;
         backface-visibility: hidden;
         transition: all .5s ease;
+
+        &.--short {
+            width: 20px;  
+        }
     }
 
     &.tgl-burger {
@@ -171,15 +180,15 @@
 // ハンバーガーのtoggle時のスタイル
 
 .tgl-line1 {
-    opacity: 0;
-}
-
-.tgl-line2 {
     background-color: #fff;
     transform: translateY(2px) rotate(45deg);
 }
 
+.tgl-line2 {
+    opacity: 0;
+}
+
 .tgl-line3 {
     background-color: #fff;
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-16px) rotate(-45deg);
 }
