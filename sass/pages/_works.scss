@@ -8,6 +8,8 @@
 
     &__item-box {
 
+        margin-top: 40px;
+
         @media screen and (min-width: 768px){
             display: flex;
             flex-wrap: wrap;
@@ -15,23 +17,32 @@
     }
 
     &__item {
-        margin: 50px auto;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+        margin: 40px auto 0px auto;
+        overflow: hidden;
+        height: auto;
+        width: 80%;
+        transition: all .3s ease;
+
+        &:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+            transform: scale(1.05) translateY(-3px);
+        }
     
         @media screen and (min-width: 481px) {
-            height: 200px;
-            width: 300px;
+            width: 60%;
     }
     
         @media screen and (min-width: 768px) {
-            height: 240px;
-            width: 360px;
+            width: 40%;
     }
     }
 
     &__description {
         background: rgba($color-primary, .8);
         color: $color-secondary;
-        border: 5px solid $color-secondary;
+        border-radius: 5px;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -49,5 +60,6 @@
 
 .works img {
     max-width: 100%;
+    vertical-align: bottom;
 }
 
