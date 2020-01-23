@@ -46,13 +46,13 @@
             clip-path: circle(100px at 90% -20%);
             -webkit-clip-path: circle(100px at 90% -20%);
             transition: all .5s ease-out;
-            opacity: 0;
+            visibility: hidden;
+            z-index: 100;
 
             &.open {
                 clip-path: circle(700px at 90% -20%);
                 -webkit-clip-path: circle(700px at 90% -20%);
-                opacity: 1;
-                z-index: 100;
+                visibility: visible;
 
                 @media screen and (max-width: 480px) {
                     clip-path: circle(600px at 90% -20%);
@@ -82,8 +82,8 @@
                 left: 0;
                 height: 15px;
                 width: 15px;
-                border-top: 5px solid #000;
-                border-left: 5px solid #000;
+                border-top: 5px solid $color-secondary;
+                border-left: 5px solid $color-secondary;
                 z-index: -1;
                 transition: all .5s;
                 box-sizing: border-box;
@@ -102,8 +102,8 @@
                 right: 0;
                 height: 15px;
                 width: 15px;
-                border-bottom: 5px solid #000;
-                border-right: 5px solid #000;
+                border-bottom: 5px solid $color-secondary;
+                border-right: 5px solid $color-secondary;
                 z-index: -1;
                 transition: all .5s;
                 box-sizing: border-box;
@@ -125,7 +125,7 @@
     }
 
     &__link {
-        color: #000;
+        color: #545454;
         text-decoration: none;        
 
         @media screen and (max-width: 768px) {
