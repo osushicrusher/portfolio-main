@@ -3,8 +3,8 @@
 }
 
 .sns-icon {
-  background-color: transparent;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,32 @@
     left: 50%;
     transform: translate(-50%, -90%);
     width: 60%;
+    z-index: 10;
   }
+}
+
+.sns-icon__link:hover {
+  transform: scale(1.2) translateY(-3px);
+}
+
+.sns-icon__link:active {
+  transform: scale(1.2) translateY(-1px);
+}
+
+.sns-icon__link.--twitter-color {
+  color: #1da1f2;
+}
+
+.sns-icon__link.--insta-color {
+  color: #cf2e92;
+}
+
+.sns-icon__link.--github-color {
+  color: #545454;
+}
+
+.sns-icon__link.--facebook-color {
+  color: #3c5a99;
 }
 
 .sns-icon i {
