@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .btn-square-shadow {
+  appearance: none;
   display: inline-block;
   padding: 0.5em 1em;
   text-decoration: none;
