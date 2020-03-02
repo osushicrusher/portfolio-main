@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +54,9 @@
                 <img src="./images/about.jpg" class="about__img" alt="">
                 <div class="about__profile">
                     <p class="about__profile-text text-primary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, earum magni a illum id quisquam blanditiis vero eos fugiat corrupti?
+                        吉野 光 （よしの ひかる)<br>
+                        新潟大学人文学部人文学科3年<br>
+                        2019年10月頃から学習開始し、現在はVue.jsとPHPをメインに学習中。
                     </p>
                     <div class="about__skill-items">
                         <div class="about__skill-item">
@@ -157,7 +160,7 @@
             <div class="secondary-text-box">
                 <h2 class="heading-secondary">Contact</h2>
             </div>
-            <form action="#" class="contact__form-box effect-fade">
+            <form action="#" class="contact__form-box effect-fade" method="POST" action="index.php">
                 <p class="contact__form">
                     <label for="company">貴社名</label><br>
                     <input type="text" name="company" class="contact__input contact__input--text" id="company" placeholder="例）△△△△会社">
@@ -168,7 +171,7 @@
                 </p>
                 <p class="contact__form">
                     <label for="js-mail">メールアドレス <span class="required">必須</span></label><br>
-                    <input type="email" name="mail" id="js-mail" class="contact__input contact__input--text" placeholder="yoshino@example.com" required>
+                    <input type="email" name="mail" id="js-mail" class="contact__input contact__input--text" placeholder="例) yoshino@example.com" required>
                     <p id="js-warningMail" class="warning-message"></p>
                 </p>                            
                 <p class="contact__form">                            
@@ -180,17 +183,17 @@
                     <label for="message">お問い合わせ内容 <span class="required">必須</span></label><br>
                     <textarea name="message" class="contact__input contact__input--message" id="message" required></textarea>
                 </p>                            
-                <p><input type="submit" value="送信する" class="btn-square-shadow"></p>
+                <p><input type="submit" value="入力を確認する" name="btn_confirm" class="btn-square-shadow"></p>
             </form>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="sns-icon" ontouchstart="">
-            <a href="#" class="sns-icon__link --twitter-color" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/yeunserratos/?hl=en" class="sns-icon__link --insta-color" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/osushicrusher" class="sns-icon__link --github-color" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" class="sns-icon__link --facebook-color"><i class="fab fa-facebook" target="_blank"></i></a>
+        <div class="sns-icon">
+            <a href="#" class="sns-icon__link --twitter-color" target="_blank"><i class="fab fa-twitter" ontouchstart=""></i></a>
+            <a href="https://www.instagram.com/yeunserratos/?hl=en" class="sns-icon__link --insta-color" target="_blank"><i class="fab fa-instagram" ontouchstart=""></i></a>
+            <a href="https://github.com/osushicrusher" class="sns-icon__link --github-color" target="_blank"><i class="fab fa-github" ontouchstart=""></i></a>
+            <a href="#" class="sns-icon__link --facebook-color"><i class="fab fa-facebook" target="_blank" ontouchstart=""></i></a>
         </div>
         <p class="copyright">
             <small>Copyright &copy; 2020 HIKARU YOSHINO All Rights Reserved.</small>
