@@ -546,7 +546,7 @@ body {
         display: flex;
         flex-wrap: wrap; } }
   .works__item {
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(49, 49, 49, 0.4);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     margin: 40px auto 0px auto;
@@ -565,15 +565,13 @@ body {
         width: 40%; } }
   .works__description {
     background: rgba(255, 255, 255, 0.8);
-    color: #9028da;
+    color: #313131;
     border-radius: 5px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    display: flex;
-    align-items: center;
     opacity: 0; }
     .works__description:hover {
       opacity: 1; }
