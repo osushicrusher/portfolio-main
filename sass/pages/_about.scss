@@ -28,12 +28,12 @@
     }
 
     &__profile-text {
+        line-height: 4rem;
         padding: 10px;
     }
 
     &__skill-items {
         display: flex;
-        justify-content: space-around;
         flex-wrap: wrap;
         margin-top: 20px;
         padding: 20px;
