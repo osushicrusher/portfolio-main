@@ -1,0 +1,49 @@
+.hamburger {
+    background-color: transparent;
+    display: none;
+    position: fixed;
+    top: 2vh;
+    right: 10%;
+    transition: all .5s ease;
+    z-index: 1000;
+
+    &__line {
+        background-color: $color-secondary;
+        margin: 6px;
+        height: 3px;
+        width: 30px;
+        backface-visibility: hidden;
+        transition: all .5s ease;
+
+        &.--short {
+            width: 20px;  
+        }
+    }
+
+    &.tgl-burger {
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+}
+
+// ハンバーガーのtoggle時のスタイル
+
+.tgl-line1 {
+    background-color: #fff;
+    transform: translateY(2px) rotate(45deg);
+}
+
+.tgl-line2 {
+    opacity: 0;
+}
+
+.tgl-line3 {
+    background-color: #fff;
+    transform: translateY(-16px) rotate(-45deg);
+}
