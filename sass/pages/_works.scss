@@ -17,33 +17,42 @@
     }
 
     &__item {
-        border: 1px solid rgba($color-black, .4);
+        border: 1px solid rgba(0, 0, 0, .4);
         border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
         margin: 40px auto 0px auto;
         overflow: hidden;
         height: auto;
+        max-width: 480px;
         width: 80%;
         transition: all .3s ease;
 
         &:hover {
-            box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+            box-shadow: 0 0 12px rgba(0, 0, 0, .4);
             transform: scale(1.05) translateY(-3px);
         }
     
         @media screen and (min-width: 481px) {
             width: 60%;
-    }
+        }
     
         @media screen and (min-width: 768px) {
             width: 40%;
-    }
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 30%;
+        }
     }
 
-    &__description {
+    &__description-box {
         background: rgba($color-primary, .8);
         color: #313131;
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 20px;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -55,10 +64,29 @@
             opacity: 1;
         }
     }
+
+    &__description {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        margin-top: 10px;
+    
+        @media screen and (min-width: 768px) {
+            font-size: 1.6rem;
+            line-height: 2rem;
+            margin-top: 20px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            margin-top: 20px;
+        }
+    }
 }
 
 .works img {
-    max-width: 100%;
+    height: auto;
+    width: 100%;
     vertical-align: bottom;
 }
 
