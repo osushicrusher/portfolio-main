@@ -28,30 +28,27 @@
     }
 
     &__profile-text {
-        line-height: 4rem;
+        line-height: 3rem;
         padding: 10px;
+
+        @media screen and (min-width: 769px) {
+            line-height: 4rem
+        }
     }
 
     &__skill-items {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
         margin-top: 20px;
-        padding: 20px;
-
-        @media screen and (max-width: 768px){
-            padding: 0px;
-        }
+        padding: 10px;
     }
 
     &__skill-item {
         margin: 10px;
-        padding: 20px;
-        min-width: 70px;
-
-        @media screen and (max-width: 768px){
-            margin: 10px;
-            padding: 0;
-        }
+        padding: 10px;
+        max-width: 140px;
+        width: 40%;
     }
 
     &__skill-bar {
@@ -63,7 +60,28 @@
     &__skill-square {
         background-color: $color-secondary;
         height: 8px;
-        width: 8px;
+        min-width: 8px;
+        width: 10%;
+
+        @media screen and (min-width: 480px){
+            height: 10px;
+            width: 10px;
+        }
+
+        @media screen and (min-width: 769px){
+            height: 12px;
+            width: 12px;
+        }
+
+        @media screen and (min-width: 1024px){
+            height: 14px;
+            width: 14px;
+        }
+
+        @media screen and (min-width: 1024px){
+            height: 12px;
+            width: 12px;
+        }
 
         &:not(:last-child) {
             margin-right: 8px;
