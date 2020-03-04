@@ -1,25 +1,51 @@
 
-.heading-primary {
-    backface-visibility: hidden;
+.heading {
 
-    &--main {
+    &-primary {
+        backface-visibility: hidden;
         color: $color-primary;
-        font-size: 6rem;
-        font-weight: 400;
-        display: block;
         text-align: center;
-        animation: .8s slideInLeft ease-in;
 
-        @media screen and (max-width: 375px) {
-            font-size: 4rem;
+        &--main {
+            font-size: 6rem;
+            font-weight: 400;
+            display: block;
+            animation: .8s slideInLeft ease-in;
+
+            @media screen and (max-width: 375px) {
+                font-size: 4rem;
+            }
+        }
+
+        &--sub {
+            animation: .8s slideInRight ease-in;
         }
     }
 
-    &--sub {
-        color: $color-primary;
-        display: block;
+    &-secondary {
+        border-bottom: 3px $color-secondary solid;
+        display: inline-block;
+        font-size: 4rem;
+        margin: 0 auto;
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+
+    &-tertiary {
+        font-size: 2rem;
         text-align: center;
-        animation: .8s slideInRight ease-in;
+    }
+}
+
+.text {
+    &-primary {
+        font-size: 1.8rem;
+    }
+
+    &-secondary {
+        font-size: 1.4rem;
+        min-width: 50px;
+        width: 40%;
     }
 }
 
@@ -27,25 +53,6 @@
     color: red;
     font-size: 1.6rem;
     font-weight: 800;
-}
-
-.heading-secondary {
-    border-bottom: 3px $color-secondary solid;
-    display: inline-block;
-    font-size: 4rem;
-    margin: 0 auto;
-    padding: 1rem;
-    text-transform: uppercase;
-}
-
-.text-primary {
-    font-size: 1.8rem;
-}
-
-.text-secondary {
-    font-size: 1.4rem;
-    min-width: 50px;
-    width: 40%;
 }
 
 .copyright {
