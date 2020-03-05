@@ -7,25 +7,11 @@
         align-items: center;
         display: flex;
         height: 10vh;
-        justify-content: space-around;
-        margin: 0 auto;
+        justify-content: flex-end;
 
         @media screen and (max-width: 768px) {
             justify-content: space-between;
         }
-    }
-
-    &__logo-box {
-        @media screen and (max-width: 768px) {
-            position: fixed;
-            top: 2vh;
-            left: 10%;
-            z-index: 99;
-        }
-    }
-
-    &__logo {
-        font-size: 3.5rem;
     }
 
     &__nav {
