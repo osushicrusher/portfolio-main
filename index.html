@@ -15,13 +15,10 @@
 <body> 
     <header class="header">
         <div class="header__top">
-            <div class="header__logo-box">
-                <h2 class="header__logo">YH</h2>
-            </div>
             <ul id="js-nav" class="header__nav">
-                <li class="header__list list-effect" ontouchstart=""><a href="#" class="header__link">About</a></li>
-                <li class="header__list list-effect" ontouchstart=""><a href="#" class="header__link">Works</a></li>                    
-                <li class="header__list list-effect" ontouchstart=""><a href="#" class="header__link">Contact</a></li>
+                <li class="header__list list-effect" ontouchstart=""><a href="#about" class="header__link">About</a></li>
+                <li class="header__list list-effect" ontouchstart=""><a href="#works" class="header__link">Works</a></li>                    
+                <li class="header__list list-effect" ontouchstart=""><a href="#contact" class="header__link">Contact</a></li>
             </ul>
             <div id="js-hamburger" class="hamburger">
                 <div id="js-line1" class="hamburger__line line1"></div>
@@ -41,13 +38,13 @@
 
     <main>
         <section class="about">
-            <div class="secondary-text-box">
+            <a id="about" class="heading-secondary-box">
                 <h2 class="heading-secondary">About</h2>
-            </div>
+            </a>
             <div class="row effect-fade">
                 <img src="./images/about.jpg" class="about__img" alt="">
                 <div class="about__profile">
-                    <p class="about__profile-text text-primary">
+                    <p class="about__profile-text">
                         吉野 光 （よしの ひかる)<br>
                         新潟大学人文学部人文学科3年<br>
                         2019年10月頃から学習開始し、現在はVue.jsとPHPをメインに学習中。
@@ -119,8 +116,8 @@
         </section>
 
         <section class="works">
-            <div class="secondary-text-box">
-                <h2 class="heading-secondary">Works</h2>
+            <div class="heading-secondary-box">
+                <a id="works"><h2 class="heading-secondary">Works</h2></a>
             </div>
             <div class="works__item-box">
                     <figure class="works__item effect-fade">
@@ -149,8 +146,8 @@
         </section>
 
         <section class="contact">
-            <div class="secondary-text-box">
-                <h2 class="heading-secondary">Contact</h2>
+            <div class="heading-secondary-box">
+                <a id="contact"><h2 class="heading-secondary">Contact</h2></a>
             </div>
             <form action="#" class="contact__form-box effect-fade" method="POST" action="index.php">
                 <p class="contact__form">

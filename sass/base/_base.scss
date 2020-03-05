@@ -1,47 +1,6 @@
-//流体
 
-.fluid {
-    align-items: center;
-    display: flex;
-    margin:  0 auto;
-    overflow: hidden;
-
-    &--small {
-        height: 200px;
-        width: 200px;
-    }
-
-    &--medium {
-        height: 400px;
-        width: 400px;
-
-        @media screen and (max-width: 480px) {
-            height: 300px;
-            width: 300px;
-        }
-
-        @media screen and (max-width: 340px) {
-            height: 250px;
-            width: 250px;
-        }
-    }
-}
-
-.secondary-text-box {
-    display: flex;
-    align-items: center;
-    height: 10vh;
+.heading-secondary-box {
+    display: block;
     text-align: center;
 }
 
-.effect-fade {
-    opacity: 0;
-    transform: translateY(150px);
-    transition: all 1.5s;
-}
-
-
-.effect-fade.effect-scroll {
-    opacity: 1;
-    transform: translateY(0);
-}
