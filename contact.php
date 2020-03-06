@@ -76,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             <label for="message">お問い合わせ内容 <span class="required">必須</span></label><br>
             <textarea name="message" class="contact__input contact__input--message" id="message" required><?php echo $message; ?></textarea>
         </p>                            
-        <buuton type="submit" value="入力を確認する" name="btn_confirm" class="btn-square-shadow"></button>
+        <button type="submit" value="入力を確認する" name="btn_confirm" class="btn-square-shadow"></button>
     </form>
 </body>
 </html>
