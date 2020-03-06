@@ -60,18 +60,6 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     <title>Contact</title>
 </head>
 <body>
-    <?php if ($err_msg != ''): ?>
-        <div>
-            <?php echo $err_msg; ?>
-        </div>
-    <?php endif; ?>
-
-    <?php if ($complete_msg != ''): ?>
-        <div>
-            <?php echo $complete_msg; ?>
-        </div>
-    <?php endif; ?>
-
     <form class="contact__form-box" method="POST">
         <p class="contact__form">                            
             <label for="name">お名前</label><br>
