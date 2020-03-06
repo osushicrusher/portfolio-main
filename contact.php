@@ -54,9 +54,10 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 <body>
     <?php if ($err_msg != ''): ?>
@@ -82,13 +83,13 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
         </p>                            
         <p class="contact__form">                            
             <label for="subject">件名 </label><br>
-            <input type="text" name="subject" id="subject" class="contact__input contact__input--text" placeholder="件名" id="subject" value="<?php echo $subject; ?>">
+            <input type="text" name="subject" id="subject" class="contact__input contact__input--text" placeholder="件名" id="subject" value="<?php echo $subject; ?>" required>
         </p>
         <p class="contact__form">
             <label for="message">お問い合わせ内容</label><br>
             <textarea name="message" class="contact__input contact__input--message" id="message" required><?php echo $message; ?></textarea>
         </p>                            
-        <button type="submit" value="入力を確認する" name="btn_confirm" class="btn-square-shadow">送信する</button>
+        <button type="submit" name="btn_confirm" class="btn-square-shadow">送信する</button>
     </form>
 </body>
 </html>
