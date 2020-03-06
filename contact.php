@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
         </p>                            
         <p class="contact__form">                            
             <label for="subject">件名 </label><br>
-            <input type="text" id="subject" name="subject" class="contact__input contact__input--text" placeholder="件名" id="subject" value="<?php echo $subject; ?>">
+            <input type="text" name="subject" id="subject" class="contact__input contact__input--text" placeholder="件名" id="subject" value="<?php echo $subject; ?>">
         </p>
         <p class="contact__form">
             <label for="message">お問い合わせ内容 <span class="required">必須</span></label><br>
