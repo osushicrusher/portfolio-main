@@ -1,18 +1,18 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     // POSTでのアクセスでない場合
-    $company = '';
-    $realname = '';
-    $mail = '';
-    $phone = '';
+    $name = '';
+    $email = '';
+    $subject = '';
     $message = '';
+    $err_msg = '';
+    $complete_msg = '';
 } else {
     // フォームがsubmitされた時（POST処理）
     // 値を取得する
-    $company = $_POST['company'];
-    $realname = $_POST['realname'];
-    $mail = $_POST['mail'];
-    $phone = $_POST['phone'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
     $message = $_POST['message'];
 }
 
@@ -21,18 +21,17 @@ $err_msg = '';
 $complete_msg = '';
 
 // 空チェック（必須項目が記入されているか）
-if ($realname = '' || $mail = '' || $message = '') {
+if ($name = '' || $email = '' || $subject == '' || $message = '') {
     $err_msg = '正しく記入してください';
 }
 
 // 項目に不備がない場合（必須項目が埋まっている）は送信
 if ($err_msg = '') {
     $to = 'osushicrusher@gmail.com'; // 送信先の指定
-    $headers = "From" . $mail . "\r\n"; // headerの指定
-    $subject = $realname . 'さんからのお問い合わせ'; // 件名の指定
+    $headers = "From" . $email . "\r\n"; // headerの指定
 
-    //messageの最後に会社名と名前,電話番号を追加
-    $message .= "\r\n\r\n" . $company . $realname . $phone;
+    //messageの最後に名前を追加
+    $message .= "\r\n\r\n" . $name
 
     // メールを送信
     mb_send_mail($to, $subject, $message, $headers);
@@ -43,10 +42,9 @@ if ($err_msg = '') {
     echo $alert;
 
     // 全てクリア
-    $company = '';
-    $realname = '';
-    $mail = '';
-    $phone = '';
+    $name = '';
+    $email = '';
+    $subject = '';
     $message = '';
 }
 
@@ -204,32 +202,28 @@ if ($err_msg = '') {
                 <a id="contact"><h2 class="heading-secondary">Contact</h2></a>
             </div>
             <form class="contact__form-box effect-fade" method="POST">
-                <p class="contact__form">
-                    <label for="company">貴社名</label><br>
-                    <input type="text" name="company" class="contact__input contact__input--text" id="company" placeholder="例）△△△△会社">
-                </p>
                 <p class="contact__form">                            
-                    <label for="realname">お名前 <span class="required">必須</span></label><br>
-                    <input type="text" name="realname" class="contact__input contact__input--text" id="realname" placeholder="例）田中 太郎" required>
+                    <label for="name">お名前 <span class="required">必須</span></label><br>
+                    <input type="text" name="name" class="contact__input contact__input--text" id="name" placeholder="例）田中 太郎" value="<?php echo $name; ?>" required>
                 </p>
                 <p class="contact__form">
-                    <label for="js-mail">メールアドレス <span class="required">必須</span></label><br>
-                    <input type="email" name="mail" id="js-mail" class="contact__input contact__input--text" placeholder="例) yoshino@example.com" required>
-                    <p id="js-warningMail" class="warning-message"></p>
+                    <label for="email">メールアドレス <span class="required">必須</span></label><br>
+                    <input type="email" name="email" id="email" class="contact__input contact__input--text" placeholder="例) yoshino@example.com" value="<?php echo $email ?>" required>
                 </p>                            
                 <p class="contact__form">                            
-                    <label for="js-phone">電話番号 </label><br>
-                    <input type="tel" id="js-phone" name="phone" class="contact__input contact__input--text" placeholder="例）03-1234-5678" id="phone">
-                    <p id="js-warningPhone" class="warning-message"></p>
+                    <label for="subject">件名 </label><br>
+                    <input type="text" id="subject" name="subject" class="contact__input contact__input--text" placeholder="件名" id="subject" value="<?php echo $subject ?>">
                 </p>
                 <p class="contact__form">
                     <label for="message">お問い合わせ内容 <span class="required">必須</span></label><br>
-                    <textarea name="message" class="contact__input contact__input--message" id="message" required></textarea>
+                    <textarea name="message" class="contact__input contact__input--message" id="message" required><?php echo $message; ?></textarea>
                 </p>                            
-                <p><input type="submit" value="入力を確認する" name="btn_confirm" class="btn-square-shadow"></p>
+                <buuton type="submit" value="入力を確認する" name="btn_confirm" class="btn-square-shadow"></button>
             </form>
         </section>
     </main>
+
+    
 
     <footer class="footer">
         <div class="sns-icon">

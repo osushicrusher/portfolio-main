@@ -120,35 +120,3 @@ const fluidSmall = function(){
 // fluidLargeアニメーション関数の実行
 fluidSmall();
 
-/*-----フォーム-----*/
-
-//メールアドレス
-const mailAddressText = document.getElementById('js-mail');
-
-mailAddressText.addEventListener('blur', function() { //focusが外れると判定する
-  const warningMailMessage = document.getElementById('js-warningMail');
-  const mailAddress = this.value; //入力されたメールアドレス
-  const mailAddressRegexp = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/;
-
-  if (mailAddressRegexp.test(mailAddress) === false) {
-    warningMailMessage.innerHTML = 'メールアドレスを正しく入力してください';
-  } else {
-    warningMailMessage.innerHTML = '';
-  }
-})
-
-
-// 電話番号
-const phoneNumberText = document.getElementById('js-phone');
-
-phoneNumberText.addEventListener('blur', function() { //focusが外れるたびに内容のチェックをする
-  const warningPhoneMessage = document.getElementById('js-warningPhone');
-  const phoneNumber = this.value; // 入力された電話番号
-  const trimmedPhoneNumber = phoneNumber.replace(/-/g, ''); //電話番号に「-」が含まれていたら「''」(空文字)に置き換える
-
-  if (/^[0][0-9]{9,10}$/.test(trimmedPhoneNumber) === false) {
-    warningPhoneMessage.innerHTML = '電話番号を正しく入力してください';
-  } else {
-    warningPhoneMessage.innerHTML = '';
-  }
-})
