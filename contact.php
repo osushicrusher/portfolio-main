@@ -59,6 +59,18 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     <title>Document</title>
 </head>
 <body>
+    <?php if ($err_msg != ''): ?>
+        <div class="alert alert-danger">
+            <?php echo $err_msg; ?>
+        </div>
+    <?php endif; ?>
+
+    <?php if ($complete_msg != ''): ?>
+        <div class="alert alert-success">
+            <?php echo $complete_msg; ?>
+        </div>
+    <?php endif; ?>
+    
     <form class="contact__form-box effect-fade" method="POST">
         <p class="contact__form">                            
             <label for="name">お名前 <span class="required">必須</span></label><br>
