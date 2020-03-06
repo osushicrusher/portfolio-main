@@ -60,18 +60,18 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 </head>
 <body>
     <?php if ($err_msg != ''): ?>
-        <div class="alert alert-danger">
+        <div>
             <?php echo $err_msg; ?>
         </div>
     <?php endif; ?>
 
     <?php if ($complete_msg != ''): ?>
-        <div class="alert alert-success">
+        <div>
             <?php echo $complete_msg; ?>
         </div>
     <?php endif; ?>
-    
-    <form class="contact__form-box effect-fade" method="POST">
+
+    <form class="contact__form-box" method="POST">
         <p class="contact__form">                            
             <label for="name">お名前 <span class="required">必須</span></label><br>
             <input type="text" name="name" class="contact__input contact__input--text" id="name" placeholder="例）田中 太郎" value="<?php echo $name; ?>" required>
