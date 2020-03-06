@@ -203,7 +203,7 @@ if ($err_msg = '') {
             <div class="heading-secondary-box">
                 <a id="contact"><h2 class="heading-secondary">Contact</h2></a>
             </div>
-            <form action="#" class="contact__form-box effect-fade" method="POST" action="index.php">
+            <form class="contact__form-box effect-fade" method="POST">
                 <p class="contact__form">
                     <label for="company">貴社名</label><br>
                     <input type="text" name="company" class="contact__input contact__input--text" id="company" placeholder="例）△△△△会社">
