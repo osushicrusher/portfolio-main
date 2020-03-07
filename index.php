@@ -2,6 +2,7 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
+    // POSTでのアクセスでない場合
     $name = '';
     $email = '';
     $subject = '';
@@ -80,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                 <img src="./images/about.jpg" class="about__img" alt="">
                 <div class="about__profile">
                     <p class="about__profile-text">
-                        吉野 光 （よしの ひかる)<br>
+                        吉野 光 （よしの ひかる）<br>
                         新潟大学人文学部人文学科3年<br>
                         2019年10月頃から学習開始し、現在はVue.jsとPHPをメインに学習中。
                     </p>
@@ -186,29 +187,25 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             </div>
 
             <?php if ($complete_msg != ''): ?>
-                <div class="alert alert-success">
+                <div>
                     <?php echo $complete_msg; ?>
                 </div>
             <?php endif; ?>
 
-            <form class="contact__form-box" method="post">
-                <p class="contact__form">                            
-                    <label for="name">お名前</label><br>
-                    <input type="text" name="name" class="contact__input contact__input--text" id="name" placeholder="例）田中 太郎" value="<?php echo $name; ?>" required>
-                </p>
-                <p class="contact__form">
-                    <label for="email">メールアドレス</label><br>
-                    <input type="email" name="email" id="email" class="contact__input contact__input--text" placeholder="例) yoshino@example.com" value="<?php echo $email; ?>" required>
-                </p>                            
-                <p class="contact__form">                            
-                    <label for="subject">件名</label><br>
-                    <input type="text" name="subject" id="subject" class="contact__input contact__input--text" placeholder="件名" id="subject" value="<?php echo $subject; ?>" required>
-                </p>
-                <p class="contact__form">
-                    <label for="message">お問い合わせ内容</label><br>
-                    <textarea name="message" class="contact__input contact__input--message" id="message" required><?php echo $message; ?></textarea>
-                </p>                            
-                <button type="submit" name="btn_confirm" class="btn-square-shadow">送信する</button>
+            <form method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="お名前" value="<?php echo $name; ?>">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="email" placeholder="メールアドレス" value="<?php echo $email; ?>">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" placeholder="件名" value="<?php echo $subject; ?>">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="本文"><?php echo $message; ?></textarea>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">送信</button>
             </form>
         </section>
     </main>
