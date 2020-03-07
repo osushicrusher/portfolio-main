@@ -1,7 +1,5 @@
 <?php
 
-require_once('index.php');
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $to = 'osushicrusher@gmail.com';
         $headers = "From: " . $email . "\r\n";
