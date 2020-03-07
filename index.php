@@ -191,7 +191,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                 </div>
             <?php endif; ?>
 
-            <form class="contact__form-box" method="POST">
+            <form class="contact__form-box" method="post">
                 <p class="contact__form">                            
                     <label for="name">お名前</label><br>
                     <input type="text" name="name" class="contact__input contact__input--text" id="name" placeholder="例）田中 太郎" value="<?php echo $name; ?>" required>
