@@ -176,7 +176,7 @@ if (!empty($_POST['btn_confirm'])) {
             <div class="heading-secondary-box">
                 <a id="contact"><h2 class="heading-secondary">Contact</h2></a>
             </div>
-            <form class="contact__form-box" method="POST" action="">
+            <form class="contact__form-box" method="POST" action="contact">
                 <p class="contact__form">                            
                     <label for="name">お名前</label><br>
                     <input type="text" name="name" class="contact__input contact__input--text" id="name" placeholder="例）田中 太郎" value="" required>
