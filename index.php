@@ -1,28 +1,13 @@
 
 <?php
 
-var_dump($_POST);
 if (!empty($_POST['btn_confirm'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
 
-    $to = 'osushicrusher@gmail.com'; // 管理者のメールアドレスなど送信先を指定
-    $headers = "From: " . $email . "\r\n";
-
-    // 本文の最後に名前を追加
-    $message .= "\r\n\r\n" . $name;
-
-    // メール送信
-    mb_send_mail($to, $subject, $message, $headers);
-
-    // 全てクリア
-    $name = '';
-    $email = '';
-    $subject = '';
-    $message = '';
-
+    session_start();
+    $_SESSION['name'] = $_POST['name'];
+    $_SESSION['email'] = $_POST['email'];
+    $_SESSION['subject'] = $_POST['subject'];
+    $_SESSION['message'] = $_POST['message'];
 }
 
 ?>
