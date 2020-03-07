@@ -6,7 +6,6 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     $email = '';
     $subject = '';
     $message = '';
-    $err_msg = '';
     $complete_msg = '';
 } else {
     // formがsubmitされた場合(POST処理)
@@ -186,12 +185,6 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                 <a id="contact"><h2 class="heading-secondary">Contact</h2></a>
             </div>
 
-            <?php if ($err_msg != ''): ?>
-                <div class="alert alert-danger">
-                    <?php echo $err_msg; ?>
-                </div>
-            <?php endif; ?>
-
             <?php if ($complete_msg != ''): ?>
                 <div class="alert alert-success">
                     <?php echo $complete_msg; ?>
@@ -219,7 +212,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             </form>
         </section>
     </main>
-    
+
     <footer class="footer">
         <div class="sns-icon">
             <a href="#" class="sns-icon__link --twitter" target="_blank"><i class="fab fa-twitter"></i></a>
