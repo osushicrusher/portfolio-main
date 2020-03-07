@@ -1,13 +1,22 @@
 
 <?php
 
+var_dump($_POST);
 if (!empty($_POST['btn_confirm'])) {
 
-    session_start();
-    $_SESSION['name'] = $_POST['name'];
-    $_SESSION['email'] = $_POST['email'];
-    $_SESSION['subject'] = $_POST['subject'];
-    $_SESSION['message'] = $_POST['message'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    $to = 'osushicrusher@gmail.com'; // 管理者のメールアドレスなど送信先を指定
+    $headers = "From: " . $email . "\r\n";
+
+    // 本文の最後に名前を追加
+    $message .= "\r\n\r\n" . $name;
+
+    // メール送信
+    mb_send_mail($to, $subject, $message, $headers);
 }
 
 ?>
@@ -161,7 +170,7 @@ if (!empty($_POST['btn_confirm'])) {
             <div class="heading-secondary-box">
                 <a id="contact"><h2 class="heading-secondary">Contact</h2></a>
             </div>
-            <form class="contact__form-box" method="POST" action="contact.php">
+            <form class="contact__form-box" method="POST" action="">
                 <p class="contact__form">                            
                     <label for="name">お名前</label><br>
                     <input type="text" name="name" class="contact__input contact__input--text" id="name" placeholder="例）田中 太郎" value="" required>
