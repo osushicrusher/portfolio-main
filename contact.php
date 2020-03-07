@@ -1,6 +1,6 @@
 <?php
 
-include('index.php');
+require_once('index.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $to = 'osushicrusher@gmail.com';
