@@ -1,4 +1,46 @@
 
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] != 'POST') {
+    $name = '';
+    $email = '';
+    $subject = '';
+    $message = '';
+    $err_msg = '';
+    $complete_msg = '';
+} else {
+    // formがsubmitされた場合(POST処理)
+    // 入力された値を取得する
+    $name = $POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+
+    // エラーなし(全ての項目が入力されている)
+    if ($name != '' || $email != '' || $subject != '' || $message != '') {
+        $to = 'osushicrusher@gmail.com';
+        $headers = "From: " . $email . "\r\n";
+
+        // 本文の最後に名前を追加
+        $message .= "\r\n\r\n" . $name;
+
+        // メール送信
+        mb_send_mail($to, $subject, $message, $headers);
+
+        // 完了メッセージ
+        $complete_msg = '送信されました';
+
+        // 全てクリア
+        $name = '';
+        $email = '';
+        $subject = '';
+        $message = '';
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
