@@ -2,7 +2,7 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-    // POSTでのアクセスでない場合
+    // POST処理の場合
     $name = '';
     $email = '';
     $subject = '';
@@ -156,28 +156,29 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                 <a id="works"><h2 class="heading-secondary">Works</h2></a>
             </div>
             <div class="works__item-box">
-                    <figure class="works__item effect-fade">
-                        <img src="./images/weatherApp.png" alt="天気検索アプリのimage">
-                        <a href="https://weather-app-7fa23.firebaseapp.com" target="_blank">
-                            <figcaption class="works__description-box" ontouchstart="">
-                                <h3 class="heading-tertiary">天気検索アプリ</h3>
-                                <p class="works__description">世界各地の現在の天気情報を検索することができます。<br>
-                                使用言語等: Vue.js, firebase
-                                </p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                    <figure class="works__item effect-fade">
-                        <img src="./images/final.png" alt="英語学習アプリのimage">
-                        <a href="https://final-952b0.firebaseapp.com" target="_blank">
-                            <figcaption class="works__description-box" ontouchstart="">
-                                <h3 class="heading-tertiary">英語学習アプリ</h3>
-                                <p class="works__description">NewYorkTimesのニュースの閲覧、単語、英文の保存。<br>
-                                「英語できてすごいね！」と褒められても、実際には思うように使いこなせず自分のこれまでの学習法に悔いている人向け。<br>
-                                使用言語等: Vue.js, firebase
-                                </p>
-                            </figcaption>
-                        </a>
+                <figure class="works__item effect-fade">
+                    <img src="./images/weatherApp.png" alt="天気検索アプリのimage">
+                    <a href="https://weather-app-7fa23.firebaseapp.com" target="_blank">
+                        <figcaption class="works__description-box" ontouchstart="">
+                            <h3 class="heading-tertiary">天気検索アプリ</h3>
+                            <p class="works__description">世界各地の現在の天気情報を検索することができます。<br>
+                            使用言語等: Vue.js, firebase
+                            </p>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure class="works__item effect-fade">
+                    <img src="./images/final.png" alt="英語学習アプリのimage">
+                    <a href="https://final-952b0.firebaseapp.com" target="_blank">
+                        <figcaption class="works__description-box" ontouchstart="">
+                            <h3 class="heading-tertiary">英語学習アプリ</h3>
+                            <p class="works__description">NewYorkTimesのニュースの閲覧、単語、英文の保存。<br>
+                            「英語できてすごいね！」と褒められても、実際には思うように使いこなせず自分のこれまでの学習法に悔いている人向け。<br>
+                            使用言語等: Vue.js, firebase
+                            </p>
+                        </figcaption>
+                    </a>
+                </figure>
             </div>
         </section>
 
@@ -192,20 +193,24 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                 </div>
             <?php endif; ?>
 
-            <form method="post">
-                <div class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="お名前" value="<?php echo $name; ?>">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="email" placeholder="メールアドレス" value="<?php echo $email; ?>">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="subject" placeholder="件名" value="<?php echo $subject; ?>">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" placeholder="本文"><?php echo $message; ?></textarea>
-                </div>
-                <button type="submit" class="btn btn-success btn-block">送信</button>
+            <form class="contact__form-box" method="post">
+                <p class="contact__form">                            
+                    <label for="name">お名前</label><br>
+                    <input type="text" name="name" class="contact__input contact__input--text" id="name" placeholder="例）田中 太郎" value="<?php echo $name; ?>" required>
+                </p>
+                <p class="contact__form">
+                    <label for="email">メールアドレス</label><br>
+                    <input type="email" name="email" id="email" class="contact__input contact__input--text" placeholder="例) yoshino@example.com" value="<?php echo $email; ?>" required>
+                </p>                            
+                <p class="contact__form">                            
+                    <label for="subject">件名</label><br>
+                    <input type="text" name="subject" id="subject" class="contact__input contact__input--text" placeholder="件名" id="subject" value="<?php echo $subject; ?>" required>
+                </p>
+                <p class="contact__form">
+                    <label for="message">お問い合わせ内容</label><br>
+                    <textarea name="message" class="contact__input contact__input--message" id="message" required><?php echo $message; ?></textarea>
+                </p>                            
+                <button type="submit" name="btn_confirm" class="btn-square-shadow">送信する</button>
             </form>
         </section>
     </main>
