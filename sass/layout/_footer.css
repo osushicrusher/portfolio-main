@@ -36,19 +36,19 @@
   transform: scale(1.2) translateY(-3px);
 }
 
-.sns-icon__link.--twitter {
+.sns-icon__link--twitter {
   color: #1da1f2;
 }
 
-.sns-icon__link.--insta {
+.sns-icon__link--insta {
   color: #cf2e92;
 }
 
-.sns-icon__link.--github {
+.sns-icon__link--github {
   color: #545454;
 }
 
-.sns-icon__link.--facebook {
+.sns-icon__link--facebook {
   color: #3c5a99;
 }
 

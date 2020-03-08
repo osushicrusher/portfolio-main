@@ -193,18 +193,16 @@ if (!empty($_POST['btn_confirm'])) {
 
     <footer class="footer">
         <div class="sns-icon">
-            <a href="#" class="sns-icon__link --twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/yeunserratos/?hl=en" class="sns-icon__link --insta" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/osushicrusher" class="sns-icon__link --github" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" class="sns-icon__link --facebook"><i class="fab fa-facebook" target="_blank"></i></a>
+            <a href="#" class="sns-icon__link sns-icon__--twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yeunserratos/?hl=en" class="sns-icon__link sns-icon__link--insta" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/osushicrusher" class="sns-icon__link sns-icon__link--github" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" class="sns-icon__link sns-icon__link--facebook"><i class="fab fa-facebook" target="_blank"></i></a>
         </div>
         <p class="copyright" lang="en">
             <small>Copyright &copy; 2020 HIKARU YOSHINO All Rights Reserved.</small>
         </p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/slick.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
