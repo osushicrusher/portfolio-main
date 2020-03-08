@@ -1,7 +1,6 @@
 
 <?php
 
-var_dump($_POST);
 if (!empty($_POST['btn_confirm'])) {
 
     $name = $_POST['name'];
@@ -9,7 +8,7 @@ if (!empty($_POST['btn_confirm'])) {
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    $to = 'osushicrusher@gmail.com'; // 管理者のメールアドレスなど送信先を指定
+    $to = 'osushicrusher@gmail.com'; // 送信先を指定
     $headers = "From: " . $email . "\r\n";
 
     // 本文の最後に名前を追加

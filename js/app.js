@@ -6,7 +6,8 @@ window.onload = function() {
     scroll_effect();
   });
 
-  function scroll_effect() {
+  // スクロール時エフェクト
+  const scroll_effect = () => {
     $('.effect-fade').each(function() {
       const elemPos = $(this).offset().top;
       const scroll = $(window).scrollTop();
@@ -22,40 +23,46 @@ window.onload = function() {
 
 /*-----ハンバーガーメニュー-----*/
 
-let navToggleFlag = 0; //0のときnavは閉じている, 1のときnavは開いている
+// nav開閉のフラグを設定。0=closed, 1=open
+let navToggleFlag = 0;
+
+// バーガーメニューのライン
 const line1 = document.getElementById('js-line1');
 const line2 = document.getElementById('js-line2');
 const line3 = document.getElementById('js-line3');
+
+// hamburger, nav, list
 const hamburger = document.getElementById('js-hamburger');
 const nav = document.getElementById('js-nav');
 const navLists = document.querySelectorAll('.header__list');
 
-hamburger.addEventListener('click', navToggle); //ハンバーガーメニューを押すとnavが開閉する。
+// hamburger, navをクリックでtoggleする
+hamburger.addEventListener('click', navToggle); 
+nav.addEventListener('click', navToggle);
 
-nav.addEventListener('click', navToggle)//navが展開されているときには、リンク以外の箇所をクリックしてもnavが閉じるようにする。
-
-
-
-
-function navToggle() {  //navの開閉の関数を定義
+// nav開閉の関数を定義
+const navToggle = () => {
+  // navが閉じている時
   if (navToggleFlag == 0) {
     nav.classList.toggle('open');
     line1.classList.toggle('tgl-line1');
     line2.classList.toggle('tgl-line2');
     line3.classList.toggle('tgl-line3');
     hamburger.classList.toggle('tgl-burger');
+    // 指定のwidth内に条件を指定
     if (matchMedia('(max-width: 768px)').matches) {
       navLists.forEach(function(list, index) {
         list.style.animation = `navListFade .8s ease forwards ${index / 6}s`;
       })
     }
     navToggleFlag = 1;
-  } else {
+  } else { // navが開いているとき
     nav.classList.toggle('open');
     line1.classList.toggle('tgl-line1');
     line2.classList.toggle('tgl-line2');
     line3.classList.toggle('tgl-line3');
     hamburger.classList.toggle('tgl-burger');
+    // 指定のwidth内に条件を指定
     if (matchMedia('(max-width: 768px)').matches) {
       navLists.forEach(function(list) {
         list.style.animation = '';
@@ -63,25 +70,26 @@ function navToggle() {  //navの開閉の関数を定義
     }
     navToggleFlag = 0;
     }
-  }
+}
 
 
 /*------流体アニメーション-----*/
 
-// fluidColor配列からランダムに色を抽出して値を返す
-
+// 流体の色
 const fluidColor = ["#E47B7A", "#F1AD87", "#6E84FA", "#E8EC74", "#123456", "#5A5A5A", "#233A66", "#11AB7B", "#662523", "#313131", "rgb(144, 20, 218)"]; // 流体の色
 
-const colorSelect = function() {
+// fluidColor配列からランダムに色を抽出して値を返す
+const colorSelect = () => {
   const randomNumber = Math.floor(Math.random() * fluidColor.length);
   return fluidColor[randomNumber];
 }
 
-const randomness = 700; // 振れ幅
-const threshold = 200; // しきい値
+// 振れ幅、しきい値を指定
+const randomness = 700;
+const threshold = 200;
 
 // fluidMedium関数の定義
-const fluidMedium = function(){
+const fluidMedium = () => {
     colorSelect();
     $('.fluid--medium').css("background-color", colorSelect());
     // animate関数を使用
@@ -101,7 +109,7 @@ const fluidMedium = function(){
 fluidMedium();
 
 // fluidSmall関数の定義
-const fluidSmall = function(){
+const fluidSmall = () => {
   colorSelect();
   $('.fluid--small').css("background-color", colorSelect());
   // animate関数を使用
