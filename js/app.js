@@ -1,10 +1,5 @@
 
 window.onload = function() {
-  scroll_effect();
-
-  $(window).scroll(function() {
-    scroll_effect();
-  });
 
   // スクロール時エフェクト
   const scroll_effect = () => {
@@ -12,12 +7,19 @@ window.onload = function() {
       const elemPos = $(this).offset().top;
       const scroll = $(window).scrollTop();
       const windowHeight = $(window).height();
-
+  
       if(scroll > elemPos - windowHeight) {
         $(this).addClass('effect-scroll');
       }
     });
   }
+
+  scroll_effect();
+
+  $(window).scroll(function() {
+    scroll_effect();
+  });
+
 }
 
 
@@ -35,10 +37,6 @@ const line3 = document.getElementById('js-line3');
 const hamburger = document.getElementById('js-hamburger');
 const nav = document.getElementById('js-nav');
 const navLists = document.querySelectorAll('.header__list');
-
-// hamburger, navをクリックでtoggleする
-hamburger.addEventListener('click', navToggle); 
-nav.addEventListener('click', navToggle);
 
 // nav開閉の関数を定義
 const navToggle = () => {
@@ -71,6 +69,10 @@ const navToggle = () => {
     navToggleFlag = 0;
     }
 }
+
+// hamburger, navをクリックでtoggleする
+hamburger.addEventListener('click', navToggle); 
+nav.addEventListener('click', navToggle);
 
 
 /*------流体アニメーション-----*/
