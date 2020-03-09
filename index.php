@@ -5,6 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     $email = '';
     $subject = '';
     $message = '';
+    
 } else {
     // フォームがサブミットされた場合（POST処理）
     // 入力された値を取得する
