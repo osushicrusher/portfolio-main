@@ -201,7 +201,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             </form>
         </section>
     </main>
-
+    
     <footer class="footer">
         <div class="sns-icon">
             <a href="#" class="sns-icon__link sns-icon__link--twitter" target="_blank"><i class="fab fa-twitter"></i></a>
