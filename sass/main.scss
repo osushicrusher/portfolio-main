@@ -4,11 +4,11 @@
 
 // base
 @import "base/animations.scss";
-@import "base/base.scss";
 @import "base/typography.scss";
 @import "base/utilities.scss";
 
 // components
+@import "components/app-summary.scss";
 @import "components/button.scss";
 @import "components/carousel.scss";
 @import "components/fluid.scss";

@@ -26,6 +26,10 @@
         width: 80%;
         transition: all .3s ease;
 
+        &:after {
+            
+        }
+
         &:hover {
             box-shadow: 0 0 12px rgba(0, 0, 0, .4);
             transform: scale(1.05) translateY(-3px);
@@ -82,11 +86,12 @@
             margin-top: 20px;
         }
     }
+
+    & img {
+        height: auto;
+        width: 100%;
+        vertical-align: bottom;
+    }
 }
 
-.works img {
-    height: auto;
-    width: 100%;
-    vertical-align: bottom;
-}
 

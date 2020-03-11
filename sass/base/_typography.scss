@@ -22,6 +22,10 @@
         }
     }
 
+    &-secondary-box {
+        text-align: center;
+    }
+
     &-secondary {
         border-bottom: 3px $color-secondary solid;
         display: inline-block;
