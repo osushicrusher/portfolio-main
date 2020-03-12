@@ -404,10 +404,6 @@
   @media screen and (max-width: 768px) {
     .row {
       padding: 10px 10px; } }
-  .row img {
-    height: auto;
-    width: 100%;
-    vertical-align: bottom; }
 
 * {
   box-sizing: border-box;
@@ -461,7 +457,7 @@ body {
         line-height: 4.6rem; } }
     @media screen and (min-width: 1440px) {
       .about__profile-text {
-        font-size: 　2 0.8rem;
+        font-size: 2.8rem;
         line-height: 5rem; } }
   .about__skill-items {
     display: flex;
