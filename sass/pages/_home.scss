@@ -17,5 +17,9 @@ body {
 .wrapper {
     background-color: orange;
     padding: 10px;
+
+    @media screen and (min-width: 768px) {
+        padding: 50px;
+    }
 }
 

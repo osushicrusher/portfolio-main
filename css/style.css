@@ -143,6 +143,9 @@
 .app-detail {
   background-color: yellow;
   margin-top: 20px; }
+  @media screen and (min-width: 768px) {
+    .app-detail {
+      padding: 20px; } }
   .app-detail__link-box {
     text-align: center; }
 
@@ -421,6 +424,9 @@ body {
 .wrapper {
   background-color: orange;
   padding: 10px; }
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      padding: 50px; } }
 
 .about {
   margin-top: 20px;

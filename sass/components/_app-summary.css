@@ -1,0 +1,40 @@
+.app-summary {
+  background-color: aqua;
+}
+
+.app-summary__item:not(:first-child) {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .app-summary__item {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .app-summary__img-box {
+    width: 30%;
+  }
+}
+
+.app-summary img {
+  height: auto;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.app-detail {
+  background-color: yellow;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .app-detail {
+    padding: 20px;
+  }
+}
+
+.app-detail__link-box {
+  text-align: center;
+}

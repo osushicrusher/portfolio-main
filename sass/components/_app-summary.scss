@@ -2,6 +2,18 @@
 
     background-color: aqua;
 
+    @media screen and (min-width: 768px) {
+
+    }
+
+    @media screen and (min-width: 1024px) {
+
+    }
+
+    @media screen and (min-width: 1440px) {
+
+    }
+
     &__item-box {
         
     }
@@ -35,6 +47,10 @@
 .app-detail {
     background-color: yellow;
     margin-top: 20px;
+
+    @media screen and (min-width: 768px) {
+        padding: 20px;
+    }
 
     &__link-box {
         text-align: center;
