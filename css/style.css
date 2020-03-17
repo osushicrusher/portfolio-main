@@ -134,7 +134,7 @@
       display: flex; } }
   @media screen and (min-width: 768px) {
     .app-summary__img-box {
-      width: 30%; } }
+      width: 40%; } }
   .app-summary img {
     height: auto;
     width: 100%;
