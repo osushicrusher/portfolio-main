@@ -7,13 +7,26 @@
     }
 
     &__form-box {
-        margin-top: 20px;
+        margin: 20px auto 0 auto;
         padding: 20px;
-        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            width: 80%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 70%;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 60%;
+        }
     }
 
     &__form {
         font-size: 1.3rem;
+        margin-top: 10px;
+        padding: 5px;
 
         &:not(:last-child) {
             margin-bottom: 10px;
@@ -23,23 +36,26 @@
 
     &__input {
         background-color: transparent;
-        border: 1px solid;
-        width: 90%;
-
-        @media screen and (min-width: 769px) {
-            width: 60%;
-        }
-
-        &:focus {
-            outline: 2px solid rgba($color-secondary, .8);
-        }
+        outline: none;
+        margin-top: 6px;
+        padding: 6px;
+        width: 100%;
 
         &--text {
-            padding: 5px;
+            border: none;
+            border-bottom: 1px solid #313131;
+
+            &:focus {
+                border-bottom: 2px solid $color-secondary;
+            }
         }
 
         &--message {
             height: 20vh;
+
+            &:focus {
+                border: 2px solid $color-secondary;
+            }
         }
     }
 }
