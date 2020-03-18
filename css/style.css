@@ -146,6 +146,11 @@
   @media screen and (min-width: 768px) {
     .app-detail {
       padding: 20px; } }
+  .app-detail__item {
+    border: 1px solid #313131;
+    padding: 10px; }
+    .app-detail__item:not(:first-child) {
+      margin-top: 10px; }
   .app-detail__link-box {
     text-align: center; }
 
@@ -200,26 +205,38 @@
     .contact {
       padding: 10px; } }
   .contact__form-box {
-    margin-top: 20px;
-    padding: 20px;
-    width: 100%; }
+    margin: 20px auto 0 auto;
+    padding: 20px; }
+    @media screen and (min-width: 768px) {
+      .contact__form-box {
+        width: 80%; } }
+    @media screen and (min-width: 1024px) {
+      .contact__form-box {
+        width: 70%; } }
+    @media screen and (min-width: 1440px) {
+      .contact__form-box {
+        width: 60%; } }
   .contact__form {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    margin-top: 10px;
+    padding: 5px; }
     .contact__form:not(:last-child) {
       margin-bottom: 10px; }
   .contact__input {
     background-color: transparent;
-    border: 1px solid;
-    width: 90%; }
-    @media screen and (min-width: 769px) {
-      .contact__input {
-        width: 60%; } }
-    .contact__input:focus {
-      outline: 2px solid rgba(173, 101, 224, 0.8); }
+    outline: none;
+    margin-top: 6px;
+    padding: 6px;
+    width: 100%; }
     .contact__input--text {
-      padding: 5px; }
+      border: none;
+      border-bottom: 1px solid #313131; }
+      .contact__input--text:focus {
+        border-bottom: 2px solid #ad65e0; }
     .contact__input--message {
       height: 20vh; }
+      .contact__input--message:focus {
+        border: 2px solid #ad65e0; }
 
 .required {
   background-color: #e43c3c;

@@ -35,6 +35,15 @@
   }
 }
 
+.app-detail__item {
+  border: 1px solid #313131;
+  padding: 10px;
+}
+
+.app-detail__item:not(:first-child) {
+  margin-top: 10px;
+}
+
 .app-detail__link-box {
   text-align: center;
 }

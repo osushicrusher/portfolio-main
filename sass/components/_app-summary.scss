@@ -52,6 +52,15 @@
         padding: 20px;
     }
 
+    &__item {
+        border: 1px solid #313131;
+        padding: 10px;
+
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+
     &__link-box {
         text-align: center;
     }
