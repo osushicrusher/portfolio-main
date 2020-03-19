@@ -47,6 +47,7 @@
 .app-detail {
     background-color: yellow;
     margin-top: 20px;
+    padding: 10px;
 
     @media screen and (min-width: 768px) {
         padding: 20px;
@@ -55,9 +56,27 @@
     &__item {
         border: 1px solid #313131;
         padding: 10px;
+        margin: 0 auto;
 
         &:not(:first-child) {
-            margin-top: 10px;
+            margin-top: 20px;
+
+            @media screen and (min-width: 1024px) {
+                margin-top: 30px;
+            }
+    
+            @media screen and (min-width: 1440px) {
+                margin-top: 50px;
+            }
+
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 80%;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 60%;
         }
     }
 
