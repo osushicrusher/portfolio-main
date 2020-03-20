@@ -1,24 +1,30 @@
 @charset "UTF-8";
-.btn-square-shadow {
+.btn {
   appearance: none;
-  display: inline-block;
-  padding: 0.5em 1em;
+  color: #FFF;
+  font-size: 1.6rem;
+  text-align: center;
   text-decoration: none;
+  display: block;
+  margin-top: 30px;
+  padding: 10px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    display: inline-block;
+    padding: 15px 40px;
+  }
+}
+
+.btn--shadow {
   background: #668ad8;
   /*ボタン色*/
-  color: #FFF;
   border-bottom: solid 4px #627295;
   border-radius: 3px;
 }
 
-@media screen and (max-width: 768px) {
-  .btn-square-shadow {
-    display: block;
-    padding: 10px 30px;
-  }
-}
-
-.btn-square-shadow:active {
+.btn--shadow:active {
   /*ボタンを押したとき*/
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
@@ -26,4 +32,14 @@
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   /*影を小さく*/
   border-bottom: none;
+}
+
+.btn-elliptical {
+  border-radius: 30px;
+}
+
+.btn-elliptical--purple {
+  background: #ad65e0;
+  /*ボタン色*/
+  border-bottom: solid 4px #9c3edf;
 }
