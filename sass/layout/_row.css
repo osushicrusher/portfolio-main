@@ -8,3 +8,27 @@
     padding: 10px 10px;
   }
 }
+
+.wrap-items {
+  background-color: crimson;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.wrap-items__item {
+  background-color: darkblue;
+}
+
+@media screen and (min-width: 768px) {
+  .wrap-items__item {
+    margin: 0 auto;
+    width: calc((100% - (10% * 1)) / 2);
+  }
+}
+
+.wrap-items img {
+  height: auto;
+  width: 100%;
+  vertical-align: bottom;
+}
