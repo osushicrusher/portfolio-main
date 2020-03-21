@@ -125,21 +125,6 @@
 .padding-left-small {
   padding-left: 20px; }
 
-.app-summary {
-  background-color: aqua; }
-  .app-summary__item:not(:first-child) {
-    margin-top: 10px; }
-  @media screen and (min-width: 768px) {
-    .app-summary__item {
-      display: flex; } }
-  @media screen and (min-width: 768px) {
-    .app-summary__img-box {
-      width: 40%; } }
-  .app-summary img {
-    height: auto;
-    width: 100%;
-    vertical-align: bottom; }
-
 .app-detail {
   background-color: yellow;
   margin-top: 20px;
@@ -175,25 +160,31 @@
   text-align: center;
   text-decoration: none;
   display: block;
-  margin-top: 30px;
   padding: 10px 30px; }
+  .btn:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    /*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    /*影を小さく*/
+    border-bottom: none; }
   @media screen and (min-width: 768px) {
     .btn {
       display: inline-block;
       padding: 15px 40px; } }
+  .btn-box {
+    background-color: coral;
+    margin-top: 30px; }
+    @media screen and (min-width: 768px) {
+      .btn-box {
+        text-align: center; } }
   .btn--shadow {
     background: #668ad8;
     /*ボタン色*/
     border-bottom: solid 4px #627295;
-    border-radius: 3px; }
-    .btn--shadow:active {
-      /*ボタンを押したとき*/
-      -webkit-transform: translateY(4px);
-      transform: translateY(4px);
-      /*下に動く*/
-      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
-      /*影を小さく*/
-      border-bottom: none; }
+    border-radius: 3px;
+    margin-top: 10px; }
   .btn-elliptical {
     border-radius: 30px; }
     .btn-elliptical--purple {
@@ -448,10 +439,21 @@
     .row {
       padding: 10px 10px; } }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+.wrap-items {
+  background-color: crimson;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px; }
+  .wrap-items__item {
+    background-color: darkblue; }
+    @media screen and (min-width: 768px) {
+      .wrap-items__item {
+        margin: 0 auto;
+        width: calc((100% - (10% * 1)) / 2); } }
+  .wrap-items img {
+    height: auto;
+    width: 100%;
+    vertical-align: bottom; }
 
 html {
   font-size: 62.5%; }
@@ -466,7 +468,7 @@ body {
   padding: 10px; }
   @media screen and (min-width: 768px) {
     .wrapper {
-      padding: 50px; } }
+      padding: 20px; } }
 
 .about {
   margin-top: 20px;
