@@ -1,6 +1,6 @@
 .row {
   display: flex;
-  padding: 60px 40px;
+  padding: 40px 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -17,13 +17,13 @@
 }
 
 .wrap-items__item {
-  background-color: darkblue;
+  background-color: #8a8ad1;
 }
 
 @media screen and (min-width: 768px) {
   .wrap-items__item {
     margin: 0 auto;
-    width: calc((100% - (10% * 1)) / 2);
+    width: calc((100% - (20% * 1)) / 2);
   }
 }
 
