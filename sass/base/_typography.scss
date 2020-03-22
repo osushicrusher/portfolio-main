@@ -7,17 +7,18 @@
         text-align: center;
 
         &--main {
-            font-size: 6rem;
+            font-size: 1.2em;
             font-weight: 400;
             display: block;
             animation: .8s slideInLeft ease-in;
 
-            @media screen and (max-width: 375px) {
-                font-size: 4rem;
+            @media screen and (min-width: 375px) {
+                font-size: 1.6em;
             }
         }
 
         &--sub {
+            font-size: .6em;
             animation: .8s slideInRight ease-in;
         }
     }
@@ -29,44 +30,44 @@
     &-secondary {
         border-bottom: 3px $color-secondary solid;
         display: inline-block;
-        font-size: 4rem;
+        font-size: 40px;
         padding: 1rem;
         text-transform: uppercase;
     }
 
     &-tertiary {
-        font-size: 2rem;
+        font-size: 20px;
         text-align: center;
     }
 }
 
 .text {
     &-primary {
-        font-size: 1.8rem;
+        font-size: 18px;
     }
 
     &-secondary {
-        font-size: 1.4rem;
+        font-size: 14px;
         min-width: 50px;
 
         @media screen and (min-width: 769px) {
-            font-size: 1.6rem 
+            font-size: 16px; 
         }
 
         @media screen and (min-width: 1024px) {
-            font-size: 2rem 
+            font-size: 20px;
         }
     }
 }
 
 .warning-message {
     color: red;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 800;
 }
 
 .copyright {
-    font-size: 1.2rem;
+    font-size: 12px;
     text-align: center;
     margin-top: 20px;
 }

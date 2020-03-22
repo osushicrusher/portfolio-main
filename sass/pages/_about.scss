@@ -6,18 +6,26 @@
         padding: 30px 10px;
     }
 
-    &__img {
-        margin-right: 50px;
-        height: 400px;
-        width: 200px;
+    &__img-box {
+        margin-right: 30px;
+        margin-top: 20px;
+        height: 600px;
+        width: 300px;
 
         @media screen and (max-width: 768px) {
             display: none;
         }
     }
 
+    & img {
+        height: auto;
+        width: 100%;
+        vertical-align: bottom;
+    }
+
     &__profile {
-        padding: 20px;
+        font-size: 14px;
+        padding: 10px;
         min-width: 200px;
         width: 70%;
 
@@ -28,23 +36,22 @@
     }
 
     &__profile-text {
-        font-size: 1.8rem;
-        line-height: 3rem;
-        padding: 10px;
+        font-size: 1.1em;
+        line-height: 2.4em;
 
         @media screen and (min-width: 768px) {
-            font-size: 2rem;
-            line-height: 4rem
+            font-size: 1.4em;
+            line-height: 2.6em
         }
 
         @media screen and (min-width: 1024px) {
-            font-size: 2.4rem;
-            line-height: 4.6rem
+            font-size: 1.6em;
+            line-height: 2.8em
         }
 
         @media screen and (min-width: 1440px) {
-            font-size: 2.8rem;
-            line-height: 5rem
+            font-size: 1.8em;
+            line-height: 3.2em
         }
     }
 
