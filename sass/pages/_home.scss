@@ -1,8 +1,4 @@
 
-html {
-    font-size: 62.5%; // This defines what 1rem is
-}
-
 body {
     background-color: #FFF;
     color: #545454;
@@ -10,7 +6,6 @@ body {
 }
 
 .wrapper {
-    background-color: orange;
     padding: 10px;
 
     @media screen and (min-width: 768px) {

@@ -1,7 +1,3 @@
-html {
-  font-size: 62.5%;
-}
-
 body {
   background-color: #FFF;
   color: #545454;
@@ -9,7 +5,6 @@ body {
 }
 
 .wrapper {
-  background-color: orange;
   padding: 10px;
 }
 
