@@ -2,7 +2,7 @@
 .btn {
     appearance: none;
     color: #FFF;
-    font-size: 1.6rem;
+    font-size: 14px;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -22,7 +22,6 @@
     }
 
     &-box {
-        background-color: coral;
         margin-top: 30px;
 
         @media screen and (min-width: 768px) {
@@ -42,7 +41,14 @@
 
         &--purple {
             background: rgb(173, 101, 224);/*ボタン色*/
-            border-bottom: solid 4px rgb(156, 62, 223);;
+            border-bottom: solid 4px rgb(156, 62, 223);
+            color: #fff;
+
+            &:hover {
+                background-color: #fff;
+                border: 1px solid rgb(173, 101, 224);
+                color: rgb(173, 101, 224);
+            }
         }
     }
 }
