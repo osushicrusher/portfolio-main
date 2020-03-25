@@ -5,6 +5,20 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+main {
+    @media screen and (min-width: 480px) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 22px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 26px;
+    }
+}
+
 .wrapper {
     padding: 10px;
 

@@ -1,20 +1,19 @@
 .works {
-    font-size: 16px;
     margin-top: 20px;
-    padding: 40px 20px;
+    padding: 10px;
 
-    @media screen and (max-width: 480px) {
-        padding: 10px;
+    @media screen and (min-width: 480px) {
+        padding: 40px 20px;
+    }
+
+    & img {
+        height: auto;
+        width: 100%;
+        vertical-align: bottom;
     }
 
     &__item-box {
-
-        margin-top: 40px;
-
-        @media screen and (min-width: 768px){
-            display: flex;
-            flex-wrap: wrap;
-        }
+        margin-top: 30px;
     }
 
     &__item {
@@ -27,6 +26,11 @@
             box-shadow: 0 0 12px rgba(0, 0, 0, .4);
             transform: scale(1.05) translateY(-3px);
         }
+
+        &:not(:first-child) {
+            margin-top: 3em;
+        }
+
     }
 
     &__description-box {
