@@ -4,21 +4,19 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-@media screen and (min-width: 480px) {
+main {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
   main {
     font-size: 18px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  main {
-    font-size: 22px;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   main {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 

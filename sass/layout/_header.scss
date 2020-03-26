@@ -1,4 +1,5 @@
 .header {
+    font-size: 1em;
     position: relative;
     width: 100%;
 
@@ -6,10 +7,10 @@
         align-items: center;
         display: flex;
         height: 10vh;
-        justify-content: flex-end;
+        justify-content: space-between;
 
-        @media screen and (max-width: 768px) {
-            justify-content: space-between;
+        @include mqMedium {
+            justify-content: flex-end;
         }
     }
 
@@ -20,7 +21,7 @@
         justify-content: space-around;
         width: 50%;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) { // 
             background-color: $color-secondary;
             align-items: center;
             justify-content: normal;
@@ -55,11 +56,7 @@
         text-transform: uppercase;
         padding: 8px 14px;
 
-        @media screen and (max-width: 768px) {
-            margin-top: 80px;
-        }
-
-        @media screen and (min-width: 769px) {
+        @include mqMedium {
             margin-right: 20px;
         }
 
@@ -73,16 +70,16 @@
                 left: 0;
                 height: 15px;
                 width: 15px;
-                border-top: 3px solid $color-secondary;
-                border-left: 3px solid $color-secondary;
+                border-top: 3px solid $color-primary;
+                border-left: 3px solid $color-primary;
                 z-index: -1;
                 transition: all .5s;
                 box-sizing: border-box;
                 opacity: 0;
 
-                @media screen and (max-width: 768px) {
-                    border-top: 3px solid $color-primary;
-                    border-left: 3px solid $color-primary;
+                @include mqMedium {
+                    border-top: 3px solid $color-secondary;
+                    border-left: 3px solid $color-secondary;
                 }
             }
 
@@ -93,16 +90,16 @@
                 right: 0;
                 height: 15px;
                 width: 15px;
-                border-bottom: 3px solid $color-secondary;
-                border-right: 3px solid $color-secondary;
+                border-bottom: 3px solid $color-primary;
+                border-right: 3px solid $color-primary;
                 z-index: -1;
                 transition: all .5s;
                 box-sizing: border-box;
                 opacity: 0;
 
-                @media screen and (max-width: 768px) {
-                    border-bottom: 3px solid $color-primary;
-                    border-right: 3px solid $color-primary;
+                @include mqMedium {
+                    border-bottom: 3px solid $color-secondary;
+                    border-right: 3px solid $color-secondary;
                 }
             }
 
@@ -116,11 +113,11 @@
     }
 
     &__link {
-        color: #545454;
+        color: $color-primary;
         text-decoration: none;        
 
-        @media screen and (max-width: 768px) {
-            color: $color-primary;
+        @include mqMedium {
+            color: #545454;
         }
     }
 

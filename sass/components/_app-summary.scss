@@ -1,9 +1,10 @@
 
 .app-detail {
+    font-size: .7em;
     margin-top: 20px;
     padding: 10px;
 
-    @media screen and (min-width: 768px) {
+    @include mqMedium {
         padding: 20px;
     }
 
@@ -15,7 +16,7 @@
         &:not(:first-child) {
             margin-top: 20px;
 
-            @media screen and (min-width: 1024px) {
+            @include mqLarge {
                 margin-top: 30px;
             }
     
@@ -25,12 +26,16 @@
 
         }
 
-        @media screen and (min-width: 1024px) {
+        @include mqMedium {
             width: 80%;
         }
 
+        @include mqLarge {
+            width: 70%;
+        }
+
         @media screen and (min-width: 1440px) {
-            width: 60%;
+            width: 50%;
         }
     }
 
