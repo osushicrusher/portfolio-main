@@ -7,6 +7,7 @@
     text-decoration: none;
     display: block;
     padding: 10px 30px;
+    transition: all .2s ease;
 
     &:active {
         /*ボタンを押したとき*/
@@ -30,7 +31,7 @@
     }
 
     &--shadow {
-        background: #668ad8;/*ボタン色*/
+        background-color: #668ad8;/*ボタン色*/
         border-bottom: solid 4px #627295;
         border-radius: 3px;
         margin-top: 10px;
@@ -40,7 +41,7 @@
         border-radius: 30px;
 
         &--purple {
-            background: rgb(173, 101, 224);/*ボタン色*/
+            background-color: rgb(173, 101, 224);/*ボタン色*/
             border-bottom: solid 4px rgb(156, 62, 223);
             color: #fff;
 

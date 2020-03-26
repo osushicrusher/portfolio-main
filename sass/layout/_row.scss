@@ -10,19 +10,29 @@
 }
 
 .wrap-items {
-    background-color: crimson;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 1em;
     padding: 10px;
 
-    &__item {
-        
-        background-color: rgb(138, 138, 209);
+    @include mqMedium {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-        @media screen and (min-width: 768px) {
+    &__item {
+        font-size: .8em;
+        margin-top: 3em;
+
+        @include mqMedium {
             margin: 0 auto;
             width: calc((100% - (20% * 1)) / 2)
         }
+    }
+
+    &__desc {
+        background-color: rgb(240, 229, 250);
+        border-left: 10px solid rgb(173, 101, 224);
+        margin-top: 2em;
+        padding: .8em;
     }
 
     & img {

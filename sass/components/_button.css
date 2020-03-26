@@ -7,6 +7,7 @@
   text-decoration: none;
   display: block;
   padding: 10px 30px;
+  transition: all .2s ease;
 }
 
 .btn:active {
@@ -37,7 +38,7 @@
 }
 
 .btn--shadow {
-  background: #668ad8;
+  background-color: #668ad8;
   /*ボタン色*/
   border-bottom: solid 4px #627295;
   border-radius: 3px;
@@ -49,7 +50,7 @@
 }
 
 .btn-elliptical--purple {
-  background: #ad65e0;
+  background-color: #ad65e0;
   /*ボタン色*/
   border-bottom: solid 4px #9c3edf;
   color: #fff;
