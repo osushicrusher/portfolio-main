@@ -164,7 +164,7 @@
   text-align: center;
   text-decoration: none;
   display: block;
-  padding: 10px 30px;
+  padding: 12px 34px;
   transition: all .1s ease; }
   .btn:active {
     /*ボタンを押したとき*/
@@ -177,20 +177,11 @@
   @media screen and (min-width: 768px) {
     .btn {
       display: inline-block;
-      margin: auto;
       padding: 15px 40px; } }
   .btn-box {
     margin: 30px auto 0 auto;
+    text-align: center;
     width: 70%; }
-    @media screen and (min-width: 768px) {
-      .btn-box {
-        text-align: center; } }
-  .btn--shadow {
-    background-color: #668ad8;
-    /*ボタン色*/
-    border-bottom: solid 4px #627295;
-    border-radius: 3px;
-    margin-top: 10px; }
   .btn-elliptical {
     border-radius: 30px; }
     .btn-elliptical:not(:first-child) {
@@ -198,6 +189,16 @@
       @media screen and (min-width: 768px) {
         .btn-elliptical:not(:first-child) {
           margin-left: 3em; } }
+    .btn-elliptical--shadow {
+      background-color: #668ad8;
+      /*ボタン色*/
+      border-bottom: solid 4px #627295;
+      color: #fff;
+      margin: 0 auto; }
+      .btn-elliptical--shadow:hover {
+        background-color: #fff;
+        border: 1px solid #668ad8;
+        color: #668ad8; }
     .btn-elliptical--purple {
       background-color: #ad65e0;
       /*ボタン色*/
@@ -242,7 +243,7 @@
   padding: 60px 40px; }
   @media screen and (max-width: 480px) {
     .contact {
-      padding: 10px; } }
+      padding: 14px; } }
   .contact__form-box {
     font-size: .8em;
     margin: 10px auto 0 auto;
@@ -258,7 +259,7 @@
         width: 50%; } }
   .contact__form {
     margin-top: 10px;
-    padding: 5px;
+    padding: 1em;
     width: 90%; }
     .contact__form:not(:first-child) {
       margin-top: 1.2em; }
