@@ -201,7 +201,9 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                         <label for="message">お問い合わせ内容</label><br>
                         <textarea name="message" class="contact__input contact__input--message" id="message" required></textarea>
                     </p>                            
-                    <input type="submit" name="btn_confirm" class="btn btn--shadow" value="入力内容を確認する">
+                    <div class="btn-box">
+                        <input type="submit" name="btn_confirm" class="btn btn-elliptical btn-elliptical--shadow" value="内容を送信する">
+                    </div>
                 </form>
             </section>
         </main>
