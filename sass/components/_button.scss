@@ -17,13 +17,15 @@
         border-bottom: none;
     }
 
-    @media screen and (min-width: 768px) {
+    @include mqMedium {
         display: inline-block;
+        margin: auto;
         padding: 15px 40px;
     }
 
     &-box {
-        margin-top: 30px;
+        margin: 30px auto 0 auto;
+        width: 70%;
 
         @media screen and (min-width: 768px) {
             text-align: center;
@@ -40,6 +42,14 @@
     &-elliptical {
         border-radius: 30px;
 
+        &:not(:first-child) { // sp表示時はbtnは縦並びなのでmtを適用。
+            margin-top: 2em;
+    
+            @include mqMedium { // tab, pc表示時は横並びなのでmlを適用。
+                margin-left: 3em;
+            }
+        }
+
         &--purple {
             background-color: rgb(173, 101, 224);/*ボタン色*/
             border-bottom: solid 4px rgb(156, 62, 223);
@@ -49,6 +59,18 @@
                 background-color: #fff;
                 border: 1px solid rgb(173, 101, 224);
                 color: rgb(173, 101, 224);
+            }
+        }
+
+        &--github {
+            background-color: #545454;/*ボタン色*/
+            border-bottom: solid 4px #1f1e1e;
+            color: #fff;
+
+            &:hover {
+                background-color: #fff;
+                border: 1px solid #545454;
+                color: #545454;
             }
         }
     }

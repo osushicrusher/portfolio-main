@@ -10,6 +10,10 @@
   transition: all .1s ease;
 }
 
+.btn:not(:first-child) {
+  margin-top: 2em;
+}
+
 .btn:active {
   /*ボタンを押したとき*/
   -webkit-transform: translateY(4px);
@@ -28,7 +32,8 @@
 }
 
 .btn-box {
-  margin-top: 30px;
+  margin: 30px auto 0 auto;
+  width: 80%;
 }
 
 @media screen and (min-width: 768px) {
@@ -60,4 +65,17 @@
   background-color: #fff;
   border: 1px solid #ad65e0;
   color: #ad65e0;
+}
+
+.btn-elliptical--github {
+  background-color: #545454;
+  /*ボタン色*/
+  border-bottom: solid 4px #1f1e1e;
+  color: #fff;
+}
+
+.btn-elliptical--github:hover {
+  background-color: #fff;
+  border: 1px solid #545454;
+  color: #545454;
 }
