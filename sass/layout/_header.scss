@@ -9,7 +9,7 @@
         height: 10vh;
         justify-content: space-between;
 
-        @include mqMedium {
+        @include mqLarge{
             justify-content: flex-end;
         }
     }
@@ -21,7 +21,7 @@
         justify-content: space-around;
         width: 50%;
 
-        @media screen and (max-width: 768px) { // 
+        @media screen and (max-width: 768px) {
             background-color: $color-secondary;
             align-items: center;
             justify-content: normal;
@@ -54,10 +54,11 @@
         letter-spacing: 1px;
         list-style: none;
         text-transform: uppercase;
+        margin: 4em 0 0 0;
         padding: 8px 14px;
 
-        @include mqMedium {
-            margin-right: 20px;
+        @include mqLarge{
+            margin: 0 1em 0 0;
         }
 
         &.list-effect {
@@ -77,7 +78,7 @@
                 box-sizing: border-box;
                 opacity: 0;
 
-                @include mqMedium {
+                @include mqLarge {
                     border-top: 3px solid $color-secondary;
                     border-left: 3px solid $color-secondary;
                 }
@@ -116,7 +117,7 @@
         color: $color-primary;
         text-decoration: none;        
 
-        @include mqMedium {
+        @include mqLarge {
             color: #545454;
         }
     }
