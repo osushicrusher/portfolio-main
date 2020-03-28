@@ -317,8 +317,8 @@
   background-color: transparent;
   display: none;
   position: fixed;
+  right: 5%;
   top: 4vh;
-  left: 5%;
   transition: all .5s ease;
   z-index: 1000; }
   .hamburger__line {
@@ -328,8 +328,16 @@
     width: 30px;
     backface-visibility: hidden;
     transition: all .5s ease; }
+    @media screen and (min-width: 768px) {
+      .hamburger__line {
+        margin: 12px;
+        height: 6px;
+        width: 60px; } }
     .hamburger__line.--short {
       width: 20px; }
+      @media screen and (min-width: 768px) {
+        .hamburger__line.--short {
+          width: 40px; } }
   .hamburger.tgl-burger {
     transform: rotate(90deg); }
 
@@ -340,6 +348,9 @@
 .tgl-line1 {
   background-color: #fff;
   transform: translateY(2px) rotate(45deg); }
+  @media screen and (min-width: 768px) {
+    .tgl-line1 {
+      transform: translateY(2px) rotate(45deg); } }
 
 .tgl-line2 {
   opacity: 0; }
@@ -347,6 +358,9 @@
 .tgl-line3 {
   background-color: #fff;
   transform: translateY(-16px) rotate(-45deg); }
+  @media screen and (min-width: 768px) {
+    .tgl-line3 {
+      transform: translateY(-32px) rotate(-45deg); } }
 
 .footer {
   font-size: 16px;
