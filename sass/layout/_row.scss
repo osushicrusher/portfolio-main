@@ -9,6 +9,24 @@
     }
 }
 
+.img-box {
+    margin: 0 auto;
+    width: 70%;
+
+    @include mqMedium {
+        width: 60%;
+    }
+
+    @include mqLarge {
+        width: 50%;
+    }
+
+    & img {
+        width: 100%;
+        vertical-align: bottom;
+    }
+}
+
 .wrap-items {
     font-size: 1em;
     padding: 10px;
@@ -23,7 +41,7 @@
         margin-top: 3em;
 
         @include mqMedium {
-            margin: 0 auto;
+            margin: 2em auto;
             width: calc((100% - (20% * 1)) / 2)
         }
     }
