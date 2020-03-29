@@ -134,37 +134,6 @@
 .padding-left-small {
   padding-left: 30px; }
 
-.app-detail {
-  font-size: .7em;
-  margin-top: 20px;
-  padding: 10px; }
-  @media screen and (min-width: 768px) {
-    .app-detail {
-      padding: 20px; } }
-  .app-detail__item {
-    border: 1px solid #313131;
-    padding: 10px;
-    margin: 0 auto; }
-    .app-detail__item:not(:first-child) {
-      margin-top: 20px; }
-      @media screen and (min-width: 1024px) {
-        .app-detail__item:not(:first-child) {
-          margin-top: 30px; } }
-      @media screen and (min-width: 1440px) {
-        .app-detail__item:not(:first-child) {
-          margin-top: 50px; } }
-    @media screen and (min-width: 768px) {
-      .app-detail__item {
-        width: 80%; } }
-    @media screen and (min-width: 1024px) {
-      .app-detail__item {
-        width: 70%; } }
-    @media screen and (min-width: 1440px) {
-      .app-detail__item {
-        width: 50%; } }
-  .app-detail__link-box {
-    text-align: center; }
-
 .btn {
   appearance: none;
   color: #FFF;
@@ -361,6 +330,44 @@
   @media screen and (min-width: 768px) {
     .tgl-line3 {
       transform: translateY(-32px) rotate(-45deg); } }
+
+.summary {
+  font-size: .7em;
+  margin-top: 20px;
+  padding: 10px; }
+  @media screen and (min-width: 768px) {
+    .summary {
+      padding: 20px; } }
+  .summary__item {
+    border: 1px solid #313131;
+    padding: 10px;
+    margin: 0 auto; }
+    .summary__item:not(:first-child) {
+      margin-top: 20px; }
+      @media screen and (min-width: 1024px) {
+        .summary__item:not(:first-child) {
+          margin-top: 30px; } }
+      @media screen and (min-width: 1440px) {
+        .summary__item:not(:first-child) {
+          margin-top: 50px; } }
+    @media screen and (min-width: 768px) {
+      .summary__item {
+        width: 80%; } }
+    @media screen and (min-width: 1024px) {
+      .summary__item {
+        width: 70%; } }
+    @media screen and (min-width: 1440px) {
+      .summary__item {
+        width: 50%; } }
+  .summary__lists {
+    margin: 1.4em;
+    padding: 0; }
+  .summary__list:not(:first-child) {
+    margin-top: 1em; }
+  .summary__text {
+    margin: 1em; }
+  .summary__link-box {
+    text-align: center; }
 
 .footer {
   font-size: 16px;

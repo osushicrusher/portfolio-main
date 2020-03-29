@@ -1,5 +1,5 @@
 
-.app-detail {
+.summary {
     font-size: .7em;
     margin-top: 20px;
     padding: 10px;
@@ -37,6 +37,22 @@
         @media screen and (min-width: 1440px) {
             width: 50%;
         }
+    }
+
+    &__lists {
+        margin: 1.4em;
+        padding: 0;
+    }
+
+    &__list {
+
+        &:not(:first-child) {
+            margin-top: 1em;
+        }
+    }
+
+    &__text {
+        margin: 1em;
     }
 
     &__link-box {
