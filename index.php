@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                         <p class="about__profile-text">
                             吉野 光 （よしの ひかる）<br>
                             新潟大学人文学部人文学科3年<br>
-                            2019年10月頃から学習開始し、現在はVue.jsとPHPをメインに学習中。
+                            2019年9月頃から学習開始し、現在はVue.jsとPHPをメインに学習中。
                         </p>
                         <div class="about__skill-items">
                             <div class="about__skill-item">
@@ -147,15 +147,26 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                             </div>
                         </div>
                     </div>
-                </divc>
+                </div>
             </section>
     
             <section class="works">
                 <div class="heading-secondary-box">
                     <a id="works"><h2 class="heading-secondary">Works</h2></a>
                 </div>
-                <div class="works__item-box">
-                    <figure class="works__item effect-fade">
+                <div class="wrap-items">
+                    <figure class="wrap-items__item effect-fade hover-effect">
+                        <img src="./images/mainmockup.png" alt="ポートフォリオのimage">
+                        <a href="main.html">
+                            <figcaption class="works__description-box" ontouchstart="">
+                                <h3 class="text-align-center">ポートフォリオ</h3>
+                                <p class="works__description">いまご覧になっているポートフォリオです。<br>
+                                使用言語等: HTML, CSS, JavaScript(jQuery), PHP
+                                </p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure class="wrap-items__item effect-fade hover-effect">
                         <img src="./images/weathermockup.png" alt="天気検索アプリのimage">
                         <a href="weather-app.html">
                             <figcaption class="works__description-box" ontouchstart="">
@@ -166,7 +177,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                             </figcaption>
                         </a>
                     </figure>
-                    <figure class="works__item effect-fade">
+                    <figure class="wrap-items__item effect-fade hover-effect">
                         <img src="./images/finalmockup.png" alt="英語学習アプリのimage">
                         <a href="vue-news-app.html">
                             <figcaption class="works__description-box" ontouchstart="">
@@ -200,10 +211,10 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                     <p class="contact__form">
                         <label for="message">お問い合わせ内容</label><br>
                         <textarea name="message" class="contact__input contact__input--message" id="message" required></textarea>
-                    </p>                            
+                    </p>
                     <div class="btn-box">
                         <input type="submit" name="btn_confirm" class="btn btn-elliptical btn-elliptical--shadow" value="内容を送信する">
-                    </div>
+                    </div>                            
                 </form>
             </section>
         </main>
