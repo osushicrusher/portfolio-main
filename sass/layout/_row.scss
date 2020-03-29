@@ -38,7 +38,7 @@
 
     &__item {
         font-size: .8em;
-        margin-top: 3em;
+        margin: 3em 1em;
 
         @include mqMedium {
             margin: 2em auto;
