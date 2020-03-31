@@ -30,6 +30,11 @@
 
     &-elliptical {
         border-radius: 30px;
+        letter-spacing: .1em;
+
+        @include mqMedium {
+            min-width: 150px;
+        }
 
         &:not(:first-child) { // ボタンが複数並ぶ時
             // sp表示時はbtnは縦並びなのでmtを適用。
@@ -37,7 +42,7 @@
     
             @include mqMedium {
                 // tab, pc表示時は横並びなのでmlを適用。
-                margin-left: 3em;
+                margin-left: 1em;
             }
         }
 
