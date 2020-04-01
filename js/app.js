@@ -77,7 +77,7 @@ nav.addEventListener('click', navToggle);
 /*------流体アニメーション-----*/
 
 // 流体の色
-const fluidColor = ["#E47B7A", "#F1AD87", "#6E84FA", "#E8EC74", "#123456", "#5A5A5A", "#233A66", "#11AB7B", "#662523", "#313131", "rgb(144, 20, 218)"]; // 流体の色
+const fluidColor = ["#E47B7A", "#F1AD87", "#6E84FA", "#E8EC74", "#123456", "#5A5A5A", "#233A66", "#11AB7B", "#662523", "#313131", "rgb(144, 20, 218)", "#976365"]; // 流体の色
 
 // fluidColor配列からランダムに色を抽出して値を返す
 const selectColor = () => {
