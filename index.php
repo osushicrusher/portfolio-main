@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                     <div class="about__profile">
                         <p class="about__profile-text">
                             吉野 光 （よしの ひかる）<br>
-                            新潟大学人文学部人文学科3年<br>
+                            新潟大学人文学部人文学科4年<br>
                             2019年9月頃から学習開始し、現在はVue.jsとPHPをメインに学習中。
                         </p>
                         <div class="about__skill-items">
@@ -186,7 +186,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                         <a href="vue-news-app.html">
                             <figcaption class="works__description-box" ontouchstart="">
                                 <h3 class="text-align-center">英語学習アプリ</h3>
-                                <p class="works__description">NewYorkTimesのニュースの閲覧、単語、英文の保存。<br>
+                                <p class="works__description">NewYorkTimesのニュースの閲覧、単語・英文の保存。<br>
                                 使用言語等: Vue.js, firebase
                                 </p>
                             </figcaption>
@@ -224,11 +224,11 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
         </main>
         
         <footer class="footer">
-            <div class="sns-icon">
-                <a href="#" class="sns-icon__link sns-icon__link--twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/yeunserratos/?hl=en" class="sns-icon__link sns-icon__link--insta"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/osushicrusher" class="sns-icon__link sns-icon__link--github"><i class="fab fa-github"></i></a>
-                <a href="#" class="sns-icon__link sns-icon__link--facebook"><i class="fab fa-facebook"></i></a>
+            <div class="sns-icons">
+                <a href="#" class="sns-icons__link sns-icons__link--twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/yeunserratos/?hl=en" class="sns-icons__link sns-icons__link--insta"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/osushicrusher" class="sns-icons__link sns-icons__link--github"><i class="fab fa-github"></i></a>
+                <a href="#" class="sns-icons__link sns-icons__link--facebook"><i class="fab fa-facebook"></i></a>
             </div>
             <p class="copyright" lang="en">
                 <small>Copyright &copy; 2020 HIKARU YOSHINO All Rights Reserved.</small>
