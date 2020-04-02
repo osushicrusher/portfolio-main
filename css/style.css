@@ -222,9 +222,6 @@
   display: flex;
   margin: 0 auto;
   overflow: hidden; }
-  .fluid--small {
-    height: 200px;
-    width: 200px; }
   .fluid--medium {
     height: 400px;
     width: 400px; }
@@ -378,7 +375,7 @@
   margin-top: 40px;
   padding: 20px; }
 
-.sns-icon {
+.sns-icons {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border-radius: 20px;
@@ -391,26 +388,26 @@
   min-width: 200px;
   max-width: 300px; }
   @media screen and (max-width: 480px) {
-    .sns-icon {
+    .sns-icons {
       position: fixed;
       top: 90%;
       left: 50%;
       transform: translate(-50%, -90%);
       width: 60%;
       z-index: 10; } }
-  .sns-icon__link {
+  .sns-icons__link {
     transition: all .2s ease; }
-    .sns-icon__link:hover {
+    .sns-icons__link:hover {
       transform: scale(1.2) translateY(-3px); }
-    .sns-icon__link--twitter {
+    .sns-icons__link--twitter {
       color: #1da1f2; }
-    .sns-icon__link--insta {
+    .sns-icons__link--insta {
       color: #cf2e92; }
-    .sns-icon__link--github {
+    .sns-icons__link--github {
       color: #545454; }
-    .sns-icon__link--facebook {
+    .sns-icons__link--facebook {
       color: #3c5a99; }
-  .sns-icon i {
+  .sns-icons i {
     font-size: 1.2em; }
 
 .header {
