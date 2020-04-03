@@ -18,3 +18,10 @@
         @content;
     }
 }
+
+
+@mixin mqXLarge {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
