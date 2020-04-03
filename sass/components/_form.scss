@@ -19,7 +19,7 @@
             width: 60%;
         }
 
-        @media screen and (min-width: 1440px) {
+        @include mqXLarge {
             width: 50%;
         }
     }
