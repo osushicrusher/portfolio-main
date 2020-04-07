@@ -33,8 +33,9 @@
 
     &__description {
         font-size: .8em;
-        line-height: 1.2em;
+        line-height: 1.6em;
         margin-top: 10px;
+        text-align: center;
     
         @include mqMedium {
             font-size: 1em;

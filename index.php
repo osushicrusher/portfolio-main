@@ -164,8 +164,8 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                         <a href="main.html">
                             <figcaption class="works__description-box" ontouchstart="">
                                 <h3 class="text-align-center">ポートフォリオ</h3>
-                                <p class="works__description">いまご覧になっているポートフォリオです。<br>
-                                使用言語等: HTML, CSS, JavaScript(jQuery), PHP
+                                <p class="works__description">いまご覧になっているポートフォリオです<br>
+                                使用言語等: JavaScript(jQuery), PHP
                                 </p>
                             </figcaption>
                         </a>
@@ -175,7 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                         <a href="weather-app.html">
                             <figcaption class="works__description-box" ontouchstart="">
                                 <h3 class="text-align-center">天気検索アプリ</h3>
-                                <p class="works__description">世界各地の現在の天気情報を検索することができます。<br>
+                                <p class="works__description">世界各地の現在の天気情報を検索<br>
                                 使用言語等: Vue.js, firebase
                                 </p>
                             </figcaption>
@@ -186,8 +186,19 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                         <a href="vue-news-app.html">
                             <figcaption class="works__description-box" ontouchstart="">
                                 <h3 class="text-align-center">英語学習アプリ</h3>
-                                <p class="works__description">NewYorkTimesのニュースの閲覧、単語・英文の保存。<br>
+                                <p class="works__description">NewYorkTimesのニュースの閲覧、単語・英文の保存<br>
                                 使用言語等: Vue.js, firebase
+                                </p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure class="wrap-items__item effect-fade hover-effect">
+                        <img src="./images/noramockup.png" alt="写真投稿アプリのimage">
+                        <a href="photo-app.html">
+                            <figcaption class="works__description-box" ontouchstart="">
+                                <h3 class="text-align-center">写真投稿アプリ</h3>
+                                <p class="works__description">写真の投稿の追加・編集・削除<br>
+                                使用言語等: PHP, MySQL
                                 </p>
                             </figcaption>
                         </a>
