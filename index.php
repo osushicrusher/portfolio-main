@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                                 </div>
                             </div>
                             <div class="about__skill-item">
-                                <p class="text-secondary">CSS3</p>
+                                <p class="text-secondary">CSS3(SCSS)</p>
                                 <div class="about__skill-bar">
                                     <div class="about__skill-square"></div>
                                     <div class="about__skill-square"></div>
