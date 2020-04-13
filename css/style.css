@@ -188,16 +188,26 @@
         background-color: #fff;
         border: 1px solid #37c500;
         color: #37c500; }
-    .btn-elliptical--shadow {
+    .btn-elliptical--submit {
       background-color: #668ad8;
       /*ボタン色*/
       border-bottom: solid 4px #627295;
       color: #fff;
       margin: 0 auto; }
-      .btn-elliptical--shadow:hover {
+      .btn-elliptical--submit:hover {
         background-color: #fff;
         border: 1px solid #668ad8;
         color: #668ad8; }
+    .btn-elliptical--back {
+      background-color: #3b3b3b;
+      /*ボタン色*/
+      border-bottom: solid 4px #1e1e1e;
+      color: #fff;
+      margin: 0 auto; }
+      .btn-elliptical--back:hover {
+        background-color: #fff;
+        border: 1px solid #3b3b3b;
+        color: #3b3b3b; }
     .btn-elliptical--purple {
       background-color: #ad65e0;
       /*ボタン色*/
@@ -259,6 +269,18 @@
     width: 90%; }
     .contact__form:not(:first-child) {
       margin-top: 1.2em; }
+  .contact__text {
+    margin: 2em auto 0 auto;
+    padding: .8em;
+    text-align: center;
+    width: 70%; }
+    .contact__text--check {
+      background-color: #3b3b3b;
+      border-left: 10px solid #1e1e1e;
+      color: #fff; }
+    .contact__text--success {
+      background-color: #f0e5fa;
+      border-left: 10px solid #ad65e0; }
   .contact__input {
     appearance: none;
     -webkit-appearence: none;

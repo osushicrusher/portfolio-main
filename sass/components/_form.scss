@@ -32,7 +32,25 @@
         &:not(:first-child) {
             margin-top: 1.2em;
         }
+    }
 
+    &__text {
+
+        margin: 2em auto 0 auto;
+        padding: .8em;
+        text-align: center;
+        width: 70%;
+        
+        &--check {
+            background-color: rgb(59, 59, 59);
+            border-left: 10px solid rgb(30, 30, 30);
+            color: #fff;
+        }
+
+        &--success {
+            background-color: rgb(240, 229, 250);
+            border-left: 10px solid rgb(173, 101, 224);
+        }
     }
 
     &__input {
