@@ -1,37 +1,3 @@
-<?php
-if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-    // POSTでのアクセスでない場合
-    $name = '';
-    $email = '';
-    $subject = '';
-    $message = '';
-    
-} else {
-    // フォームがサブミットされた場合（POST処理）
-    // 入力された値を取得する
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-
-        $to = 'osushicrusher@gmail.com'; // 送信先を指定
-        $headers = "From: " . $email . "\r\n";
-
-        // 本文の最後に名前を追加
-        $message .= "\r\n\r\n" . $name;
-
-        // メール送信
-        mb_send_mail($to, $subject, $message, $headers);
-
-        // 全てクリア
-        $name = '';
-        $email = '';
-        $subject = '';
-        $message = '';
-    }
-?>
-
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -212,7 +178,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                 <div class="heading-secondary-box">
                     <a id="contact"><h2 class="heading-secondary">Contact</h2></a>
                 </div>
-                <form class="contact__form-box" method="POST" action="">
+                <form class="contact__form-box" method="POST" action="form-check.php">
                     <p class="contact__form">                            
                         <label for="name">お名前</label><br>
                         <input type="text" name="name" class="contact__input contact__input--text" id="name" placeholder="例）田中 太郎" value="" required>
@@ -230,8 +196,8 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                         <textarea name="message" class="contact__input contact__input--message" id="message" required></textarea>
                     </p>
                     <div class="btn-box">
-                        <input type="submit" name="btn_confirm" class="btn btn-elliptical btn-elliptical--shadow" value="内容を送信する">
-                    </div>                            
+                        <input type="submit" name="btn_confirm" class="btn btn-elliptical btn-elliptical--submit" value="内容を送信する">
+                    </div>                       
                 </form>
             </section>
         </main>
