@@ -44,7 +44,7 @@
                 </div>
                 <div class="row effect-fade">
                     <div class="about__img-box">
-                        <img src="./images/about.jpg" class="about__img" alt="">
+                        <img src="./images/about.jpg" class="about__img" alt="プロフィールの写真">
                     </div>
                     <div class="about__profile">
                         <p class="about__profile-text">

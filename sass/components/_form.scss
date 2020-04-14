@@ -12,22 +12,22 @@
         padding: 1em;
 
         @include mqMedium {
-            width: 70%;
+            padding: 1em 6em;
         }
 
         @include mqLarge {
-            width: 60%;
+            padding: 2em 10em;
         }
 
         @include mqXLarge {
-            width: 50%;
+            padding: 3em 20em;
         }
     }
 
     &__form {
         margin-top: 10px;
         padding: 1em;
-        width: 90%;
+        width: 100%;
 
         &:not(:first-child) {
             margin-top: 1.2em;
@@ -61,11 +61,12 @@
         outline: none;
         margin-top: 6px;
         padding: 6px;
-        width: 100%;
+        width: 90%;
 
         &--text {
             border: none;
             border-bottom: 1px solid #313131;
+            line-height: 2em;
 
             &:focus {
                 border-bottom: 2px solid $color-secondary;
