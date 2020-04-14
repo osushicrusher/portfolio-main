@@ -18,10 +18,16 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
         $headers = "From: " . $email . "\r\n";
 
         // 本文の最後に名前を追加
-        $message .= "\r\n\r\n" . $name;
+        $messageAddedName = $message . "\r\n\r\n" . $name;
 
         // メール送信
-        mb_send_mail($to, $subject, $message, $headers);
+        mb_send_mail($to, $subject, $messageAddedName, $headers);
+
+        // トップページへのリンクを設定、エスケープ
+        $rootLink = "https://realyoshih.com";
+        if (isset($rootLink)) {
+            $rootLink = htmlspecialchars($rootLink);
+        }
     }
 ?>
 
@@ -42,26 +48,26 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             <div class="heading-secondary-box">
                 <h2 class="heading-secondary">Contact</h2>
             </div>
-            <p class="contact__text contact__text--success">送信が完了しました</p>
+            <p class="contact__text contact__text--success">以下の内容で送信が完了しました</p>
             <form class="contact__form-box" method="POST" action="form-success.php">
-                <p class="contact__form">                            
-                    <label for="name">お名前</label><br>
-                    <input type="text" name="name" class="contact__input contact__input--text" id="name" value="<?php echo $name; ?>" disabled required>
-                </p>
-                <p class="contact__form">
-                    <label for="email">メールアドレス</label><br>
-                    <input type="email" name="email" id="email" class="contact__input contact__input--text" value="<?php echo $email; ?>" disabled required>
+                <p class="contact__input contact__input--text">
+                    お名前<br>
+                    <?php echo $name; ?>
                 </p>                            
-                <p class="contact__form">                            
-                    <label for="subject">件名</label><br>
-                    <input type="text" name="subject" id="subject" class="contact__input contact__input--text"  id="subject" value="<?php echo $subject; ?>" disabled required>
-                </p>
-                <p class="contact__form">
-                    <label for="message">お問い合わせ内容</label><br>
-                    <input type="text" name="message" class="contact__input contact__input--message" id="message" value="<?php echo $message; ?>" disabled required>
+                <p class="contact__input contact__input--text">
+                    メールアドレス<br>
+                    <?php echo $email; ?>
+                </p>                         
+                <p class="contact__input contact__input--text">
+                    件名<br>
+                    <?php echo $subject; ?>
+                </p>                           
+                <p class="contact__input contact__input--text">
+                    お問い合わせ内容<br>
+                    <?php echo $message; ?>
                 </p>
                 <div class="btn-box">
-                    <input type="button" onclick="history.go(-2)" class="btn btn-elliptical btn-elliptical--back" value="トップに戻る">
+                    <a href="<?php echo $rootLink ?>" class="btn btn-elliptical btn-elliptical--back">トップに戻る</a>
                 </div>                            
             </form>
         <main>
