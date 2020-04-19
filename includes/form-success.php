@@ -34,8 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                 <h2 class="heading-secondary">Contact</h2>
             </div>
             <p class="contact__text contact__text--success">以下の内容で送信が完了しました</p>
-            <form class="contact__form-box" method="POST" action="form-success.php">
+            <div class="contact__form-box">
                 <p class="contact__input contact__input--text">
                     お名前<br>
                     <?php echo $name; ?>
@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                 <div class="btn-box">
                     <a href="<?php echo $rootLink ?>" class="btn btn-elliptical btn-elliptical--back">トップに戻る</a>
                 </div>                            
-            </form>
+            </div>
         <main>
     </div>
 </body>

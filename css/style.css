@@ -204,6 +204,16 @@
       border-bottom: solid 4px #1e1e1e;
       color: #fff;
       margin: 0 auto; }
+      .btn-elliptical--back::before {
+        content: "aaa";
+        background-color: #fff;
+        color: #fff;
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        height: 10px;
+        width: 10px; }
       .btn-elliptical--back:hover {
         background-color: #fff;
         border: 1px solid #3b3b3b;

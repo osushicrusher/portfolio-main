@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="sttylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="sttylesheet" href="../css/reset.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポートフォリオのページ</title>
+    <title>写真投稿アプリ</title>
 </head>
 <body>
     <div class="wrapper">
         <main>
-            <div class="img-box">
-                <img src="./images/mainmockup.png" alt="ポートフォリオのimage">
+            <div class="wrap-items">
+                <div class="wrap-items__item">
+                    <div>
+                        <img src="../images/noramockup2.png" alt="写真投稿アプリのimage">
+                    </div>
+                    <p class="wrap-items__desc">フォームから保存時に指定するファイル名、写真の名前、写真の簡単な説明を入力しファイルを選択する。</p>
+                </div>
+                <div class="wrap-items__item">
+                    <div>
+                        <img src="../images/noramockup3.png" alt="写真投稿アプリのimage">
+                    </div>
+                    <p class="wrap-items__desc">投稿を追加した後は写真の名前・説明を編集したり、削除したりすることができます。</p>
+                </div>
             </div>
             <div class="summary">
                 <div class="summary__item">
-                    <h2>工夫した点</h2>
+                    <h2>なぜ作ったのか</h2>
                     <ul class="summary__lists">
-                        <li class="summary__list">色の構成。白をベース色、紫色をサブ色とし、その他の色と合わせて比率が7:2:1ぐらいになるように意識した。</li>
-                        <li class="summary__list">重要なUIの配置。スマートフォンとタブレット表示時のハンバーガーメニューを右上に設置した。ページ上部にあることで目に入りやすく、指が届きやすい。また、スマートフォン表示時にはSNSの外部リンクをページ下部にfixedした。これもユーザーの指が届きやすく、より自分を知ってもらえるよう誘導することができると考えた。</li>
-                    </ul>
-                </div>
-                <div class="summary__item">
-                    <h2>大変だった点</h2>
-                    <ul class="summary__lists">
-                        <li class="summary__list">デザインカンプ制作に着手してしまい、完成させるまでの道のりやコンセプトが定まらまかった。</li>
-                        <li class="summary__list">CSS設計。命名規則や設計手法をまったく考えていなかったので苦戦した。</li>
+                        <li class="summary__list">サーバーサイド言語がどのようなものかの基本を確認するため。</li>
+                        <li class="summary__list">基本的なCRUD操作についての初歩的な内容に触れ、少しの理解を得ておきたかったため。</li>
                     </ul>
                 </div>
                 <div class="summary__item">
                     <h2>使用した言語等</h2>
                     <ul class="summary__lists">
-                        <li class="summary__list">JavaScript(jQuery)</li>
                         <li class="summary__list">PHP</li>
+                        <li class="summary__list">MySQL</li>
                     </ul>
                 </div>
                 <div class="summary__item">
                     <h2>今後追加していく機能</h2>
                     <ul class="summary__lists">
-                        <li class="summary__list">未定</li>
+                        <li class="summary__list">ソート機能</li>
                     </ul>
                 </div>
                 <div class="btn-box">
-                    <a href="https://github.com/osushicrusher/portfolio-main" class="btn btn-elliptical btn-elliptical--github"><i class="fab fa-github"></i> Github</a>
+                    <a href="http://yoshihphotoapp.com" class="btn btn-elliptical btn-elliptical--purple" target="_blank" rel="noopener noreferrer">実際に使う</a>
+                    <a href="https://github.com/osushicrusher/galleryexample" class="btn btn-elliptical btn-elliptical--github"><i class="fab fa-github"></i> Github</a>
                 </div>
             </div>
         </main>
