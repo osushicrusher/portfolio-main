@@ -50,7 +50,8 @@
                         <p class="about__profile-text">
                             吉野 光 （よしの ひかる）<br>
                             新潟大学人文学部人文学科4年<br>
-                            2019年9月頃から学習開始し、現在はVue.jsとPHPをメインに学習中。
+                            2019年9月頃から学習開始し、現在はVue.jsとPHPをメインに学習中。<br>
+                            やるきだけが唯一の売りです。よろしくお願いいたします。
                         </p>
                         <div class="about__skill-items">
                             <div class="about__skill-item">
@@ -129,7 +130,7 @@
                 <div class="wrap-items">
                     <figure class="wrap-items__item effect-fade hover-effect">
                         <img src="./images/mainmockup.png" alt="ポートフォリオのimage">
-                        <a href="main.html">
+                        <a href="./pages/main.html">
                             <figcaption class="works__description-box" ontouchstart="">
                                 <h3 class="text-align-center">ポートフォリオ</h3>
                                 <p class="works__description">いまご覧になっているポートフォリオです<br>
@@ -140,7 +141,7 @@
                     </figure>
                     <figure class="wrap-items__item effect-fade hover-effect">
                         <img src="./images/weathermockup.png" alt="天気検索アプリのimage">
-                        <a href="weather-app.html">
+                        <a href="./pages/weather-app.html">
                             <figcaption class="works__description-box" ontouchstart="">
                                 <h3 class="text-align-center">天気検索アプリ</h3>
                                 <p class="works__description">世界各地の現在の天気情報を検索<br>
@@ -151,7 +152,7 @@
                     </figure>
                     <figure class="wrap-items__item effect-fade hover-effect">
                         <img src="./images/finalmockup.png" alt="英語学習アプリのimage">
-                        <a href="vue-news-app.html">
+                        <a href="./pages/vue-news-app.html">
                             <figcaption class="works__description-box" ontouchstart="">
                                 <h3 class="text-align-center">英語学習アプリ</h3>
                                 <p class="works__description">NewYorkTimesのニュースの閲覧、単語・英文の保存<br>
@@ -162,7 +163,7 @@
                     </figure>
                     <figure class="wrap-items__item effect-fade hover-effect">
                         <img src="./images/noramockup.png" alt="写真投稿アプリのimage">
-                        <a href="photo-app.html">
+                        <a href="./pages/photo-app.html">
                             <figcaption class="works__description-box" ontouchstart="">
                                 <h3 class="text-align-center">写真投稿アプリ</h3>
                                 <p class="works__description">写真の投稿の追加・編集・削除<br>
