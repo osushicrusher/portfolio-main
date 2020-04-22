@@ -26,3 +26,12 @@ main {
     }
 }
 
+.container {
+    margin-top: 20px;
+    padding: 10px;
+
+    @include mqSmall {
+        padding: 40px 20px;
+    }
+}
+

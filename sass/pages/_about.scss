@@ -1,14 +1,7 @@
 .about {
-    margin-top: 20px;
-    padding: 60px 50px;
-
-    @media screen and (max-width: 768px){
-        padding: 30px 10px;
-    }
 
     &__img-box {
-        margin-right: 30px;
-        margin-top: 20px;
+        margin: 20px 30px;
         height: 560px;
         width: 280px;
 
@@ -36,8 +29,9 @@
     }
 
     &__profile-text {
-        font-size: 1.1em;
+        font-size: .8em;
         line-height: 2.4em;
+        padding: 0 20px;
 
         @include mqMedium {
             font-size: 1.4em;

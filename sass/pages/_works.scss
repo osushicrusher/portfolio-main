@@ -1,11 +1,5 @@
 .works {
-    margin-top: 20px;
-    padding: 10px;
-
-    @include mqSmall {
-        padding: 40px 20px;
-    }
-
+    
     &__description-box {
         background: rgba($color-primary, .8);
         color: #313131;
