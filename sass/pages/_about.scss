@@ -17,7 +17,6 @@
     }
 
     &__profile {
-        font-size: 14px;
         padding: 10px;
         min-width: 200px;
         width: 70%;
@@ -29,24 +28,8 @@
     }
 
     &__profile-text {
-        font-size: .8em;
         line-height: 2.4em;
         padding: 0 20px;
-
-        @include mqMedium {
-            font-size: 1.4em;
-            line-height: 2.6em;
-        }
-
-        @include mqLarge {
-            font-size: 1.6em;
-            line-height: 2.8em;
-        }
-
-        @include mqXLarge {
-            font-size: 1.8em;
-            line-height: 3.2em;
-        }
     }
 
     &__skill-items {
