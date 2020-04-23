@@ -1,0 +1,32 @@
+.wrap-items {
+    font-size: 1em;
+    padding: 10px;
+
+    @include mqMedium {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        font-size: .8em;
+        margin: 3em 1em;
+
+        @include mqMedium {
+            margin: 2em auto;
+            width: calc((100% - (20% * 1)) / 2);
+        }
+    }
+
+    &__desc {
+        background-color: rgb(240, 229, 250);
+        border-left: 10px solid rgb(173, 101, 224);
+        margin-top: 2em;
+        padding: .8em;
+    }
+
+    & img {
+        height: auto;
+        width: 100%;
+        vertical-align: bottom;
+    }
+}
