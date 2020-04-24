@@ -28,11 +28,21 @@
     }
 
     &-secondary {
-        border-bottom: 3px $color-secondary solid;
-        display: inline-block;
         font-size: 40px;
-        padding: 1rem;
+        padding: 1.4rem 1rem;
+        text-align: center;
         text-transform: uppercase;
+
+        &--underline {
+            border-bottom: solid;
+            border-image: linear-gradient(90deg, #e4e4e4 20%, $color-secondary 20%, $color-secondary 80%, #e4e4e4 80%) 1/0 0 2px 0;
+            margin: auto;
+            width: 80%;
+
+            @include mqMedium {
+                border-image: linear-gradient(90deg, #e4e4e4 30%, $color-secondary 30%, $color-secondary 70%, #e4e4e4 70%) 1/0 0 2px 0;
+            }
+        }
     }
 
     &-tertiary {

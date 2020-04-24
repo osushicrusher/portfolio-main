@@ -39,167 +39,173 @@
     
         <main>
             <section class="about">
-                <div class="heading-secondary-box">
-                    <a id="about"><h2 class="heading-secondary">About</h2></a>
-                </div>
-                <div class="row effect-fade">
-                    <div class="about__img-box">
-                        <img src="./images/about.jpg" class="about__img" alt="プロフィールの写真">
-                    </div>
-                    <div class="about__profile">
-                        <p class="about__profile-text">
-                            吉野 光 （よしの ひかる）<br>
-                            新潟大学人文学部人文学科4年<br>
-                            2019年9月頃から学習開始し、現在はVue.jsとPHPをメインに学習中。<br>
-                            やるきだけが唯一の売りです。よろしくお願いいたします。
-                        </p>
-                        <div class="about__skill-items">
-                            <div class="about__skill-item">
-                                <p class="text-secondary">HTML5</p>
-                                <div class="about__skill-bar">
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square lighter"></div>
-                                    <div class="about__skill-square lighter"></div>
+                <div class="container">
+                    <a id="about">
+                        <h2 class="heading-secondary">About</h2>
+                    </a>
+                    <div class="row effect-fade">
+                        <div class="about__img-box">
+                            <img src="./images/about.jpg" class="about__img" alt="プロフィールの写真">
+                        </div>
+                        <div class="about__profile">
+                            <p class="about__profile-text">
+                                <span class="text-inblc">吉野 光（よしの ひかる）</span>
+                                <span class="text-inblc">新潟大学人文学部人文学科4年</span>
+                                <span class="text-inblc">2019年9月頃から学習開始し、現在はVue.jsとPHPをメインに学習中。</span>
+                                <span class="text-inblc">やるきだけが唯一の売りです。よろしくお願いいたします。</span>
+                            </p>
+                            <div class="about__skill-items">
+                                <div class="about__skill-item">
+                                    <p class="text-secondary">HTML5</p>
+                                    <div class="about__skill-bar">
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="about__skill-item">
-                                <p class="text-secondary">CSS3(SCSS)</p>
-                                <div class="about__skill-bar">
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square lighter"></div>
-                                    <div class="about__skill-square lighter"></div>
+                                <div class="about__skill-item">
+                                    <p class="text-secondary">CSS3(SCSS)</p>
+                                    <div class="about__skill-bar">
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="about__skill-item">
-                                <p class="text-secondary">JavaScript</p>
-                                <div class="about__skill-bar">
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square lighter"></div>
-                                    <div class="about__skill-square lighter"></div>
+                                <div class="about__skill-item">
+                                    <p class="text-secondary">JavaScript</p>
+                                    <div class="about__skill-bar">
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="about__skill-item">
-                                <p class="text-secondary">PHP</p>
-                                <div class="about__skill-bar">
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square lighter"></div>
-                                    <div class="about__skill-square lighter"></div>
-                                    <div class="about__skill-square lighter"></div>
+                                <div class="about__skill-item">
+                                    <p class="text-secondary">PHP</p>
+                                    <div class="about__skill-bar">
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="about__skill-item">
-                                <p class="text-secondary">Vue.js</p>
-                                <div class="about__skill-bar">
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square lighter"></div>
-                                    <div class="about__skill-square lighter"></div>
-                                    <div class="about__skill-square lighter"></div>
+                                <div class="about__skill-item">
+                                    <p class="text-secondary">Vue.js</p>
+                                    <div class="about__skill-bar">
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="about__skill-item">
-                                <p class="text-secondary">firebase</p>
-                                <div class="about__skill-bar">
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square"></div>
-                                    <div class="about__skill-square lighter"></div>
-                                    <div class="about__skill-square lighter"></div>
-                                    <div class="about__skill-square lighter"></div>
+                                <div class="about__skill-item">
+                                    <p class="text-secondary">firebase</p>
+                                    <div class="about__skill-bar">
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="btn-box">
-                    <a href="https://www.wantedly.com/users/118382370" class="btn btn-elliptical btn-elliptical--wantedly">Wantedly</a>
-                    <a href="https://qiita.com/osushicrusher" class="btn btn-elliptical btn-elliptical--qiita">Qiita</a>
+                    <div class="btn-box">
+                        <a href="https://www.wantedly.com/users/118382370" class="btn btn-elliptical btn-elliptical--wantedly">Wantedly</a>
+                        <a href="https://qiita.com/osushicrusher" class="btn btn-elliptical btn-elliptical--qiita">Qiita</a>
+                    </div>
                 </div>
             </section>
     
             <section class="works">
-                <div class="heading-secondary-box">
-                    <a id="works"><h2 class="heading-secondary">Works</h2></a>
-                </div>
-                <div class="wrap-items">
-                    <figure class="wrap-items__item effect-fade hover-effect">
-                        <img src="./images/mainmockup.png" alt="ポートフォリオのimage">
-                        <a href="./pages/main.html">
-                            <figcaption class="works__description-box" ontouchstart="">
-                                <h3 class="text-align-center">ポートフォリオ</h3>
-                                <p class="works__description">いまご覧になっているポートフォリオです<br>
-                                使用言語等: JavaScript(jQuery), PHP
-                                </p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                    <figure class="wrap-items__item effect-fade hover-effect">
-                        <img src="./images/weathermockup.png" alt="天気検索アプリのimage">
-                        <a href="./pages/weather-app.html">
-                            <figcaption class="works__description-box" ontouchstart="">
-                                <h3 class="text-align-center">天気検索アプリ</h3>
-                                <p class="works__description">世界各地の現在の天気情報を検索<br>
-                                使用言語等: Vue.js, firebase
-                                </p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                    <figure class="wrap-items__item effect-fade hover-effect">
-                        <img src="./images/finalmockup.png" alt="英語学習アプリのimage">
-                        <a href="./pages/vue-news-app.html">
-                            <figcaption class="works__description-box" ontouchstart="">
-                                <h3 class="text-align-center">英語学習アプリ</h3>
-                                <p class="works__description">NewYorkTimesのニュースの閲覧、単語・英文の保存<br>
-                                使用言語等: Vue.js, firebase
-                                </p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                    <figure class="wrap-items__item effect-fade hover-effect">
-                        <img src="./images/noramockup.png" alt="写真投稿アプリのimage">
-                        <a href="./pages/photo-app.html">
-                            <figcaption class="works__description-box" ontouchstart="">
-                                <h3 class="text-align-center">写真投稿アプリ</h3>
-                                <p class="works__description">写真の投稿の追加・編集・削除<br>
-                                使用言語等: PHP, MySQL
-                                </p>
-                            </figcaption>
-                        </a>
-                    </figure>
+                <div class="container">
+                    <a id="works">
+                        <h2 class="heading-secondary">Works</h2>
+                    </a>
+                    <div class="wrap-items">
+                        <figure class="wrap-items__item effect-fade hover-effect">
+                            <img src="./images/mainmockup.png" alt="ポートフォリオのimage">
+                            <a href="./pages/main.html">
+                                <figcaption class="works__description-box" ontouchstart="">
+                                    <h3 class="text-align-center">ポートフォリオ</h3>
+                                    <p class="works__description">いまご覧になっているポートフォリオです<br>
+                                    使用言語等: JavaScript(jQuery), PHP
+                                    </p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="wrap-items__item effect-fade hover-effect">
+                            <img src="./images/weathermockup.png" alt="天気検索アプリのimage">
+                            <a href="./pages/weather-app.html">
+                                <figcaption class="works__description-box" ontouchstart="">
+                                    <h3 class="text-align-center">天気検索アプリ</h3>
+                                    <p class="works__description">世界各地の現在の天気情報を検索<br>
+                                    使用言語等: Vue.js, firebase
+                                    </p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="wrap-items__item effect-fade hover-effect">
+                            <img src="./images/finalmockup.png" alt="英語学習アプリのimage">
+                            <a href="./pages/vue-news-app.html">
+                                <figcaption class="works__description-box" ontouchstart="">
+                                    <h3 class="text-align-center">英語学習アプリ</h3>
+                                    <p class="works__description">NewYorkTimesのニュースの閲覧、単語・英文の保存<br>
+                                    使用言語等: Vue.js, firebase
+                                    </p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="wrap-items__item effect-fade hover-effect">
+                            <img src="./images/noramockup.png" alt="写真投稿アプリのimage">
+                            <a href="./pages/photo-app.html">
+                                <figcaption class="works__description-box" ontouchstart="">
+                                    <h3 class="text-align-center">写真投稿アプリ</h3>
+                                    <p class="works__description">写真の投稿の追加・編集・削除<br>
+                                    使用言語等: PHP, MySQL
+                                    </p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
                 </div>
             </section>
     
             <section class="contact">
-                <div class="heading-secondary-box">
-                    <a id="contact"><h2 class="heading-secondary">Contact</h2></a>
+                <div class="container">
+                    <a id="contact">
+                        <h2 class="heading-secondary">Contact</h2>
+                    </a>
+                    <form class="contact__form-box" method="POST" action="./includes/form-check.php">
+                        <p class="contact__form">                            
+                            <label for="name">お名前</label><br>
+                            <input type="text" name="name" class="contact__input contact__input--text" id="name" placeholder="例）田中 太郎" value="" required>
+                        </p>
+                        <p class="contact__form">
+                            <label for="email">メールアドレス</label><br>
+                            <input type="email" name="email" id="email" class="contact__input contact__input--text" placeholder="例) yoshino@example.com" value="" required>
+                        </p>                            
+                        <p class="contact__form">                            
+                            <label for="subject">件名</label><br>
+                            <input type="text" name="subject" id="subject" class="contact__input contact__input--text"  id="subject" value="" required>
+                        </p>
+                        <p class="contact__form">
+                            <label for="message">お問い合わせ内容</label><br>
+                            <textarea name="message" class="contact__input contact__input--message" id="message" required></textarea>
+                        </p>
+                        <div class="btn-box">
+                            <input type="submit" name="btn_confirm" class="btn btn-elliptical btn-elliptical--submit" value="内容を送信する">
+                        </div>                       
+                    </form>
                 </div>
-                <form class="contact__form-box" method="POST" action="./includes/form-check.php">
-                    <p class="contact__form">                            
-                        <label for="name">お名前</label><br>
-                        <input type="text" name="name" class="contact__input contact__input--text" id="name" placeholder="例）田中 太郎" value="" required>
-                    </p>
-                    <p class="contact__form">
-                        <label for="email">メールアドレス</label><br>
-                        <input type="email" name="email" id="email" class="contact__input contact__input--text" placeholder="例) yoshino@example.com" value="" required>
-                    </p>                            
-                    <p class="contact__form">                            
-                        <label for="subject">件名</label><br>
-                        <input type="text" name="subject" id="subject" class="contact__input contact__input--text"  id="subject" value="" required>
-                    </p>
-                    <p class="contact__form">
-                        <label for="message">お問い合わせ内容</label><br>
-                        <textarea name="message" class="contact__input contact__input--message" id="message" required></textarea>
-                    </p>
-                    <div class="btn-box">
-                        <input type="submit" name="btn_confirm" class="btn btn-elliptical btn-elliptical--submit" value="内容を送信する">
-                    </div>                       
-                </form>
             </section>
         </main>
         
