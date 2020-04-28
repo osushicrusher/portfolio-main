@@ -76,56 +76,32 @@ nav.addEventListener('click', navToggle);
 
 /*------流体アニメーション-----*/
 
-// 流体の色
-const fluidColor = ["#E47B7A", "#F1AD87", "#6E84FA", "#E8EC74", "#123456", "#5A5A5A", "#233A66", "#11AB7B", "#662523", "#313131", "rgb(144, 20, 218)", "#976365"]; // 流体の色
-
-// fluidColor配列からランダムに色を抽出して値を返す
-const selectColor = () => {
-  const randomNumber = Math.floor(Math.random() * fluidColor.length);
-  return fluidColor[randomNumber];
-}
+// 流体の色が複数入った配列
+const fluidColors = ["#E47B7A", "#F1AD87", "#6E84FA", "#E8EC74", "#123456", "#5A5A5A", "#233A66", "#11AB7B", "#662523", "#313131", "rgb(144, 20, 218)", "#976365"]; // 流体の色
 
 // 振れ幅、しきい値を指定
 const randomness = 700;
 const threshold = 200;
 
-// fluidMedium関数の定義
-const fluidMedium = () => {
-    selectColor();
-    $('.fluid--medium').css("background-color", selectColor());
+// createFluid関数の定義
+const createFluid = () => {
+    // fluidColors配列からランダムに色を抽出して値を返す
+    const randomNumber = Math.floor(Math.random() * fluidColors.length);
+    const fluidColor = fluidColors[randomNumber];
+    $('.fluid').css("background-color", fluidColor);
     // animate関数を使用
-    $('.fluid--medium').animate({
-    backgroundColor: selectColor(),
+    $('.fluid').animate({
+    backgroundColor: fluidColor,
     borderTopLeftRadius: String(Math.round((Math.random()*randomness + threshold)) + 'px'),
     borderTopRightRadius:  String(Math.round((Math.random()*randomness + threshold)) + 'px'),
     borderBottomLeftRadius:  String(Math.round((Math.random()*randomness + threshold)) + 'px'),
     borderBottomRightRadius:  String(Math.round((Math.random()*randomness + threshold)) + 'px'),
     }, {
     duration: 3000,
-    complete: fluidMedium
+    complete: createFluid
     });
 }
 
-  // fluidMediumアニメーション関数を実行
-fluidMedium();
-
-// fluidSmall関数の定義
-const fluidSmall = () => {
-  selectColor();
-  $('.fluid--small').css("background-color", selectColor());
-  // animate関数を使用
-  $('.fluid--small').animate({
-  backgroundColor: selectColor(),
-  borderTopLeftRadius: String(Math.round((Math.random()*randomness + threshold)) + 'px'),
-  borderTopRightRadius:  String(Math.round((Math.random()*randomness + threshold)) + 'px'),
-  borderBottomLeftRadius:  String(Math.round((Math.random()*randomness + threshold)) + 'px'),
-  borderBottomRightRadius:  String(Math.round((Math.random()*randomness + threshold)) + 'px'),
-  }, {
-  duration: 3000,
-  complete: fluidSmall
-  });
-}
-
-// fluidLargeアニメーション関数の実行
-fluidSmall();
+  // createFluidアニメーション関数を実行
+createFluid();
 
