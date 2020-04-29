@@ -88,9 +88,9 @@ const createFluid = () => {
     // fluidColors配列からランダムに色を抽出して値を返す
     const randomNumber = Math.floor(Math.random() * fluidColors.length);
     const fluidColor = fluidColors[randomNumber];
-    $('.fluid').css("background-color", fluidColor);
+    $('.js-fluid').css("background-color", fluidColor);
     // animate関数を使用
-    $('.fluid').animate({
+    $('.js-fluid').animate({
     backgroundColor: fluidColor,
     borderTopLeftRadius: String(Math.round((Math.random()*randomness + threshold)) + 'px'),
     borderTopRightRadius:  String(Math.round((Math.random()*randomness + threshold)) + 'px'),

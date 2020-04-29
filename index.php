@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="header__main">
-                <div class="fluid fluid--medium">
+                <div class="js-fluid">
                     <h1 class="heading-primary padding-left-small">
                         <span class="heading-primary--main">Hikaru Yoshino</span>
                         <span class="heading-primary--sub margin-top-small">Engineer</span>
@@ -41,7 +41,7 @@
             <section class="about">
                 <div class="container">
                     <a id="about">
-                        <h2 class="heading-secondary">About</h2>
+                        <h2 class="heading-secondary heading-secondary--underline">About</h2>
                     </a>
                     <div class="row effect-fade">
                         <div class="about__img-box">
@@ -118,17 +118,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="btn-box">
-                        <a href="https://www.wantedly.com/users/118382370" class="btn btn-elliptical btn-elliptical--wantedly">Wantedly</a>
-                        <a href="https://qiita.com/osushicrusher" class="btn btn-elliptical btn-elliptical--qiita">Qiita</a>
-                    </div>
                 </div>
             </section>
     
             <section class="works">
                 <div class="container">
                     <a id="works">
-                        <h2 class="heading-secondary">Works</h2>
+                        <h2 class="heading-secondary heading-secondary--underline">Works</h2>
                     </a>
                     <div class="wrap-items">
                         <figure class="wrap-items__item effect-fade hover-effect">
@@ -182,7 +178,7 @@
             <section class="contact">
                 <div class="container">
                     <a id="contact">
-                        <h2 class="heading-secondary">Contact</h2>
+                        <h2 class="heading-secondary heading-secondary--underline">Contact</h2>
                     </a>
                     <form class="contact__form-box" method="POST" action="./includes/form-check.php">
                         <p class="contact__form">                            
