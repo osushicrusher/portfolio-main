@@ -2,7 +2,7 @@
     
     &__form-box {
         font-size: .8em;
-        margin: 10px auto 0 auto;
+        margin: 2em auto 0 auto;
         padding: 1em;
 
         @include mqMedium {
@@ -29,7 +29,6 @@
     }
 
     &__text {
-
         margin: 2em auto 0 auto;
         padding: .8em;
         text-align: center;
@@ -48,10 +47,7 @@
     }
 
     &__input {
-        appearance: none;
-        -webkit-appearence: none;
         background-color: transparent;
-        border-radius: none;
         outline: none;
         margin-top: 6px;
         padding: 6px;
@@ -60,6 +56,7 @@
         &--text {
             border: none;
             border-bottom: 1px solid #313131;
+            font-size: 16px;
             line-height: 2em;
 
             &:focus {

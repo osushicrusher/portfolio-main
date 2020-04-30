@@ -247,22 +247,21 @@
         border: 1px solid #545454;
         color: #545454; }
 
-.fluid {
+.js-fluid {
   align-items: center;
   display: flex;
   margin: 0 auto;
+  height: 400px;
+  width: 400px;
   overflow: hidden; }
-  .fluid--medium {
-    height: 400px;
-    width: 400px; }
-    @media screen and (max-width: 480px) {
-      .fluid--medium {
-        height: 300px;
-        width: 300px; } }
-    @media screen and (max-width: 340px) {
-      .fluid--medium {
-        height: 250px;
-        width: 250px; } }
+  @media screen and (max-width: 480px) {
+    .js-fluid {
+      height: 300px;
+      width: 300px; } }
+  @media screen and (max-width: 340px) {
+    .js-fluid {
+      height: 250px;
+      width: 250px; } }
 
 .contact__form-box {
   font-size: .8em;
@@ -567,6 +566,7 @@
 
 .wrap-items {
   font-size: 1em;
+  margin-top: 2em;
   padding: 10px; }
   @media screen and (min-width: 768px) {
     .wrap-items {

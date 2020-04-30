@@ -1,23 +1,20 @@
 //流体
 
-.fluid {
+.js-fluid {
     align-items: center;
     display: flex;
     margin:  0 auto;
+    height: 400px;
+    width: 400px;
     overflow: hidden;
 
-    &--medium {
-        height: 400px;
-        width: 400px;
+    @media screen and (max-width: 480px) {
+        height: 300px;
+        width: 300px;
+    }
 
-        @media screen and (max-width: 480px) {
-            height: 300px;
-            width: 300px;
-        }
-
-        @media screen and (max-width: 340px) {
-            height: 250px;
-            width: 250px;
-        }
+    @media screen and (max-width: 340px) {
+        height: 250px;
+        width: 250px;
     }
 }

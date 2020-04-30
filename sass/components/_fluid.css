@@ -1,0 +1,22 @@
+.js-fluid {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .js-fluid {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .js-fluid {
+    height: 250px;
+    width: 250px;
+  }
+}
