@@ -66,7 +66,7 @@
                                     </div>
                                 </div>
                                 <div class="about__skill-item">
-                                    <p class="text-secondary">CSS3(SCSS)</p>
+                                    <p class="text-secondary">CSS3（SCSS）</p>
                                     <div class="about__skill-bar">
                                         <div class="about__skill-square"></div>
                                         <div class="about__skill-square"></div>
@@ -133,7 +133,7 @@
                                 <figcaption class="works__description-box" ontouchstart="">
                                     <h3 class="text-align-center">ポートフォリオ</h3>
                                     <p class="works__description">いまご覧になっているポートフォリオです<br>
-                                    使用言語等: JavaScript(jQuery), PHP
+                                    使用言語等: JavaScript（jQuery）, PHP
                                     </p>
                                 </figcaption>
                             </a>
