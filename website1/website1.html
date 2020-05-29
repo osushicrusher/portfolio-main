@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ofi.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>架空サイト１</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-top">
+                <h1 class="header-title">Musically</h1>
+                <ul id="js-headerNav" class="header-nav">
+                    <a href="#dates" class="header-nav-link"><li class="header-nav-item">dates</li></a>
+                    <a href="#course" class="header-nav-link"><li class="header-nav-item">course</li></a>
+                    <a href="#contact" class="header-nav-link"><li class="header-nav-item">contact</li></a>
+                </ul>
+                <div class="burger" id="js-burger" aria-expanded="false">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </div>
+            </div>
+            <div class="header__main"></div>
+        </div>
+    </header>
+    <section id="dates" class="top">
+        <div class="container">
+            <h2 class="section-title">upcoming dates</h2>
+            <div class="top-wrapper">
+                <div class="top-item">
+                    <span class="top-place">Vancouver</span>
+                    <span class="top-date">May 30</span>
+                </div>
+                <div class="top-item">
+                    <span class="top-place">London</span>
+                    <span class="top-date">June 30</span>
+                </div>
+            </div>
+            <div class="button__wrapper">
+                <a class="button button__top">ticket</a>
+                <a class="button button__top">ask to play in your city</a>
+            </div>
+        </div>
+    </section>
+    <section id="course" class="course">
+        <div class="container">
+            <h2 class="section-title">Music</h2>
+            <div class="course-wrapper">
+                <div class="course-item">
+                    <p class="course-img-box">
+                        <img class="object-fit-img" src="./images/image-music1.jpg"></img>
+                    </p>
+                    <span class="course-name">Music 1</span>
+                    <a class="button button__course">Go Listen</a>
+                </div>
+                <div class="course-item">
+                    <p class="course-img-box">
+                        <img class="object-fit-img" src="./images/image-music2.jpg"></img>
+                    </p>
+                    <span class="course-name">Music 2</span>
+                    <a class="button button__course">Go Listen</a>
+                </div>
+            </div>
+            <h2 class="section-title">Videos</h2>
+            <div class="course-wrapper">
+                <div class="course-item">
+                    <video class="course-video" src="videos/video1.mp4" controls></video>
+                    <span class="course-name">Video 1</span>
+                </div>
+                <div class="course-item">
+                    <video class="course-video" src="videos/video2.mp4" controls></video>
+                    <span class="course-name">Video 2</span>
+                </div>
+                <div class="course-item">
+                    <video class="course-video" src="videos/video3.mp4" controls></video>
+                    <span class="course-name">Video 3</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">News Letter</h2>
+            <p class="contact-message">You can get more info about all of the genres of music!</p>
+            <form class="form">
+                <p class="form__input-box">
+                    <label class="form__label">email *</label>
+                    <input id="js-email" type="email" class="form__input" required />
+                </p>
+                <p class="form__input-box">
+                    <label class="form__label">Check your email *</label>
+                    <input id="js-emailCheck" type="email" class="form__input" required />
+                </p>
+                <p class="form__input-box"><input id="js-submit" type="submit" class="form__submit" value="submit" disabled /></p>
+            </form>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <p class="copyright"><small>All rights reserved</small></p>
+        </div>
+    </footer>
+<script src="js/app.js"></script>
+<script>
+    objectFitImages('img.object-fit-img');
+</script>
+</body>
+</html>
