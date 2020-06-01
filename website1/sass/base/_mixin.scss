@@ -1,0 +1,26 @@
+// スマートフォンのメディアクエリ
+@mixin mqSmall {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+// タブレット用のメディアクエリ
+@mixin mqMedium {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+// PC用のメディアクエリ
+@mixin mqLarge {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin mqXLarge {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}

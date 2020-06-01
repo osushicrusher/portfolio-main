@@ -1,0 +1,35 @@
+.form {
+
+    padding-left: 3em;
+
+    @include mqMedium {
+        padding-left: 30%;
+    }
+
+    &__input-box {
+        margin: 0;
+
+        &:not(:first-child) {
+            margin-top: 2em;
+        }
+    }
+
+    &__input {
+        padding: .4em 1em;
+        text-align: center;
+
+        @include mqMedium {
+            display: block;
+            width: 60%;
+        }
+    }
+
+    &__label {
+        font-weight: bold;
+        display: block;
+    }
+
+    &__submit {
+        padding: .4em 2em;
+    }
+} 

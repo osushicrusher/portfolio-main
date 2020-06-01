@@ -1,0 +1,50 @@
+.button {
+    color: #ddd;
+    font-size: 1.4em;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+
+    @include mqMedium {
+
+    }
+
+    &__wrapper {
+        padding: 1.4em;
+    }
+
+    &__top {
+        background-color: #313131;
+        padding: .8em;
+        
+        &:not(:first-child) {
+            margin-top: 2em;
+        }
+
+        &:hover {
+            background-color: #ddd;
+            color: #313131;
+        }
+
+        @include mqMedium {
+
+        }
+    }
+
+    &__course {
+        background-color: #fff;
+        border: 1px solid #313131;
+        color: #313131;
+        margin: 0 auto;
+        margin-top: .5em;
+        padding: .4em;
+        width: 50%;
+
+        &:hover {
+            background-color: #313131;
+            color: #fff;
+        }
+    }
+}

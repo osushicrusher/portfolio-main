@@ -1,0 +1,52 @@
+.course {
+
+    &-wrapper {
+        padding: 2em;
+
+        @include mqMedium {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &-item {
+        
+        @include mqMedium {
+            width: calc((100% - (2em * 1)) / 2);
+
+            &:nth-child(2n) {
+                margin-left: 2em;
+            }
+        }
+    }
+
+    &-img-box {
+        background-color: #000;
+        overflow: hidden;
+
+    }
+
+    &-name {
+        font-size: 1.8em;
+        font-weight: 500;
+        display: block;
+        margin-top: .5em;
+        text-align: center;
+    }
+
+    &-video {
+        width: 100%;
+    }
+}
+
+.object-fit-img {
+    object-fit: cover;
+    font-family: 'object-fit: contain';
+    width: 100%;
+
+    &:hover {
+        opacity: .6;
+        transform: scale(1.2);
+        transition: all .5s ease;
+    }
+}
