@@ -51,7 +51,7 @@
                             <p class="about__profile-text">
                                 <span class="text-inblc">吉野 光（よしの ひかる）</span>
                                 <span class="text-inblc">新潟大学人文学部人文学科4年</span>
-                                <span class="text-inblc">2019年9月頃から学習開始し、現在はVue.jsとPHPをメインに学習中。</span>
+                                <span class="text-inblc">2019年9月頃から学習開始しました。</span>
                                 <span class="text-inblc">やるきだけが唯一の売りです。よろしくお願いいたします。</span>
                             </p>
                             <div class="about__skill-items">
@@ -77,6 +77,16 @@
                                 </div>
                                 <div class="about__skill-item">
                                     <p class="text-secondary">JavaScript</p>
+                                    <div class="about__skill-bar">
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                        <div class="about__skill-square lighter"></div>
+                                    </div>
+                                </div>
+                                <div class="about__skill-item">
+                                    <p class="text-secondary">jQuery</p>
                                     <div class="about__skill-bar">
                                         <div class="about__skill-square"></div>
                                         <div class="about__skill-square"></div>
@@ -167,6 +177,17 @@
                                     <h3 class="text-align-center">写真投稿アプリ</h3>
                                     <p class="works__description">写真の投稿の追加・編集・削除<br>
                                     使用言語等: PHP, MySQL
+                                    </p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="wrap-items__item effect-fade hover-effect">
+                            <img src="./images/website1mockup.png" alt="架空webサイトのimage">
+                            <a href="./pages/website1.html">
+                                <figcaption class="works__description-box" ontouchstart="">
+                                    <h3 class="text-align-center">webサイト</h3>
+                                    <p class="works__description">架空のwebサイト<br>
+                                    使用言語等: HTML, CSS, JavaScript
                                     </p>
                                 </figcaption>
                             </a>
