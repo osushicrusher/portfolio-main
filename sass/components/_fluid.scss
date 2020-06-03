@@ -4,17 +4,17 @@
     align-items: center;
     display: flex;
     margin:  0 auto;
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 250px;
     overflow: hidden;
 
-    @media screen and (max-width: 480px) {
+    @include mqSmall {
         height: 300px;
         width: 300px;
     }
 
-    @media screen and (max-width: 340px) {
-        height: 250px;
-        width: 250px;
+    &--logo {
+        height: 50px;
+        width: 50px;
     }
 }
